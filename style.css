@@ -1,3 +1,7 @@
+/*Navbar*/
+.nav-item .nav-link{
+    color: #161925;
+}
 .container1{
     background-color: #087C8C;
     width:80%;
@@ -66,7 +70,7 @@
     padding-left: 10%;
     padding-right:10%;
     padding-top: 5%;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 }
 
 .footer-heading{
@@ -109,7 +113,6 @@
 
 .parent-mis{
     width: 70%;
-    align-items: center;
 }
 /*Mission*/
 .mis-card{
@@ -137,4 +140,8 @@
     width: 80%;
     margin-left: 10%;
     margin-top: 5%;
+}
+
+.blank-container{
+    margin-bottom: 5%;
 }
