@@ -1,0 +1,140 @@
+.container1{
+    background-color: #087C8C;
+    width:80%;
+    color: white;
+    height: 80px;
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    margin:auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+/* not active */
+.nav-pills .pill-1 .nav-link:not(.active) {
+    color: black;
+}
+
+.info{
+    font-size: 20px;
+    font-family: sans-serif;
+    margin:auto;
+    text-align: center;
+}
+
+.nav-pills{
+    width: 100%;
+    padding-left: 25%;
+}
+.pill-1{
+    width: 20%;
+    display: flex;
+}
+.nav-link{
+    
+    align-items: center;
+}
+.nav-pills .pill-1 .active {
+    box-shadow: 10px 10px 10px #888888;
+}
+/* active (faded) */
+.nav-pills .pill-1 .nav-link {
+    background-color: white;
+    color: #F1D302;
+    font-size: x-large;
+    font-weight: bold;
+    margin:5%;
+    width:100%;
+}
+
+.app_image{
+    width:100%;
+}
+
+/* Footer */
+
+.f-card{
+    background-color: #161925;
+    color:white;
+    padding-left: 10%;
+    padding-right:10%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+.footer-heading{
+    border: 1px white solid;
+    transform: rotate(45deg);
+    height: 100px;
+    width: 100px;
+    margin-left: 30%;
+}
+
+.fh-title{
+    transform: rotate(-45deg);
+    padding-top: 30px;
+    padding-left: 11px;
+}
+
+.fh-title2{
+    transform: rotate(-45deg);
+    padding-top: 30px;
+    padding-left: 11px;
+}
+
+/* Our Services */
+
+.serv-card{
+    border: 1px black solid;
+}
+
+/*Our Services*/
+.app-btn{
+    margin-left:63%; 
+    border: 3px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to top, #087C8C, #a1cacf);
+}
+
+.app-btn :hover{
+    background:#087C8C;
+}
+
+.parent-mis{
+    width: 70%;
+    align-items: center;
+}
+/*Mission*/
+.mis-card{
+    border-radius: 50%;
+    width: 100%;
+    padding-top: 100%;
+    background-color: #087C8C;
+    position:relative;
+    margin-left:10%;
+}
+
+.mis-card-inner{
+    background-color:white;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    margin-left:10%;
+    margin-bottom: 0;
+    position:absolute;
+    bottom: 0;
+}
+
+.mis-text{
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
