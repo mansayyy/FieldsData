@@ -145,3 +145,73 @@
 .blank-container{
     margin-bottom: 5%;
 }
+
+/*Services*/
+.card-headbg{
+    background-color: #DFF8EB;
+}
+.nav-pills2{
+    width: 100%;
+}
+
+.pill-2{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-link{
+    
+    align-items: center;
+}
+.nav-pills2 .pill-2 .active {
+    box-shadow: 10px 10px 10px #888888;
+    background-color: white;
+}
+/* active (faded) */
+.nav-pills2 .pill-1 .nav-link {
+    background-color: white;
+    color: #F1D302;
+    font-size: x-large;
+    font-weight: bold;
+    margin:5%;
+    width:100%;
+}
+
+.teampicone{
+    border: 5px #087C8C solid;
+    width: 200px;
+    height: 200px;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: #888888  4px 4px 10px;
+    background-image: url(images/Laptop_image.png);
+    background-size: cover;
+}
+
+.teampicone:hover{
+    border: 5px #087C8C solid;
+    width: 200px;
+    height: 200px;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: #888888  4px 4px 10px;
+    background-image: url(images/Our-Approach.jpeg);
+    background-size: cover;
+}
+.teampictwo{
+    border: 5px #F1D302 solid;
+    width: 70%;
+    margin-top: 10%;
+    margin-left: 10%;
+    box-shadow: #888888  4px 4px 10px;
+}
+
+.contact-form{
+    width:80%;
+    border: #087C8C 1px solid;
+    height: auto;
+    padding: 5%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}

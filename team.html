@@ -1,0 +1,159 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Fields Data</title>
+  <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--Navbar-->
+    <nav class="navbar ">
+        <div class="container-fluid">
+          <a class="navbar-brand"><img src="images/logoFD_transparent_cropped.png" style="width:100px"></a>
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Impact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <div class="nav-link"style="border-radius: 5%; background-color: #161925; color:white">Contact</div>
+              </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h3>Our Team</h3>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="teampicone"></div>
+        </div>
+        <div class="col-md-3">
+          <div  class="teampicone"></div>
+        </div>
+        <div class="col-md-3">
+          <div class="teampicone"></div>
+        </div>
+        <div class="col-md-3">
+          <div class="teampicone"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4"><img src="images/Laptop_image.png" class="teampictwo"></div>
+        <div class="col-md-4"><img src="images/Laptop_image.png" class="teampictwo"></div>
+        <div class="col-md-4"><img src="images/Laptop_image.png" class="teampictwo"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h3>Contact Us</h3>
+  </div>
+
+  <div class="contact-form">
+    <form>
+      <div class="form-group row">
+        <label for="name" class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Contact</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="+11 1111111111">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Suggestions<br>/Comments</label>
+        <div class="col-sm-10">
+          <textarea type="password" class="form-control" id="inputPassword" placeholder="Password"></textarea>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary ">Submit</button>
+    </form>
+  </div>
+
+  <div id="medium-widget"></div>
+    
+
+    <!--Footer-->
+    <div class="f-card">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="footer-heading">
+              <div class="fh-title">Links</div>
+            </div>
+            <div class="d-flex align-text-center" style="margin-top: 20%;margin-left:15%;">
+              <ul style="list-style-type: none;">
+                <li>About</li>
+                <li>Services</li>
+                <li>Impact</li>
+                <li>Blog</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+            
+          </div>
+          <div class="col-md-4">
+            <img src="images/logoFD_negative_transparent.png" style="width:50%; margin-left:25%"/>
+            <br> <div style="margin-left:30%">Fields Data @2021</div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-heading">
+              <div class="fh-title2">Social</div>
+            </div>
+            <div class="d-flex" style="margin-top: 20%;margin-left:15%;">
+              <ul style="list-style-type: none;">
+                <li>About</li>
+                <li>Services</li>
+                <li>Impact</li>
+                <li>Blog</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+      
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="https://www.retainable.io/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
+
+  <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+    <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@alejandrabudar","postsPerLine":2,"limit":10,"picture":"big","fields":["description","author","claps","publishAt"],"ratio":"landscape"}})</script>
+</body>
+</html>
