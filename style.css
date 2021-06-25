@@ -26,6 +26,15 @@
     color: black;
 }
 
+.active-nav{
+    border-radius: 5%; 
+    background-color: #161925; 
+    color: aliceblue;
+    width: 70px;
+    text-align: center;
+    box-shadow: 2px 2px 2px #888888;;
+}
+
 .info{
     font-size: 20px;
     font-family: sans-serif;
