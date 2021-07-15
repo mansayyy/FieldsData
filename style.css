@@ -2,7 +2,9 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 body{
     font-family: 'Source Sans Pro', sans-serif;
-    
+}
+.bottom{
+    margin-bottom: 10%;
 }
     .marquee {
     line-height: 50px;
@@ -27,18 +29,16 @@ body{
 
 /*Navbar*/
 .navbar-brand img{
-    margin-top: 10%;
+    margin-top: 25%;
     width: 150px;
 }
 .nav-item .nav-link{
     color: #488a97;
     font-size: 20px;
 }
-
 .nav-item .nav-link:hover{
     color: #dc8c86;
 }
-
 .navbars{
     position: fixed;
     bottom:0;
@@ -50,7 +50,6 @@ body{
     text-align: center;
     border-top: 1px solid rgba(0,0,0,.1);
 }
-
 .nav{
     padding-top: 1%;
 }
@@ -88,6 +87,10 @@ body{
     border-bottom:1px solid #488a97;
     color: #488a97;
 
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+    font-size: 16px;
 }
 .info{
     font-size: 20px;
@@ -187,6 +190,9 @@ body{
     margin-bottom: 5%;
 }
 
+.board-for-lap{
+    margin-left: 19%;
+}
 /*Services*/
 .service-logo{
     width: 40%;
@@ -342,96 +348,6 @@ body{
 .ask-button:hover{
     background:#03192b
 }
-
-/*Our Team- Start*/
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
-
- *, *::before, *::after {
-	 box-sizing: border-box;
-}
- .honeycomb {
-	 display: flex;
-	 flex-wrap: wrap;
-	 list-style: none;
-	 justify-content: center;
-	 align-items: center;
-	 max-width: 1200px;
-	 margin: 0 auto;
-	 padding: 0;
-	 transform: translateY(34.375px);
-}
- .honeycomb-cell {
-	 flex: 0 1 250px;
-	 max-width: 250px;
-	 height: 137.5px;
-	 margin: 65.4761904762px 12.5px 25px;
-	 position: relative;
-	 padding: 0.5em;
-	 text-align: center;
-	 z-index: 1;
-}
- .honeycomb-cell__title {
-	 height: 100%;
-	 display: flex;
-	 flex-direction: column;
-	 justify-content: center;
-	 hyphens: auto;
-	 word-break: break-word;
-	 text-transform: uppercase;
-	 color: #fff;
-	 font-weight: 700;
-	 font-size: 1.75em;
-	 transition: opacity 350ms;
-}
- .honeycomb-cell__title > small {
-	 font-weight: 300;
-	 margin-top: 0.25em;
-}
- .honeycomb-cell__image {
-	 object-fit: cover;
-	 object-position: center;
-}
- .honeycomb-cell::before, .honeycomb-cell::after {
-	 content: '';
-}
- .honeycomb-cell::before, .honeycomb-cell::after, .honeycomb-cell__image {
-	 top: -50%;
-	 left: 0;
-	 width: 100%;
-	 height: 200%;
-	 display: block;
-	 position: absolute;
-	 clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-	 z-index: -1;
-}
- .honeycomb-cell::before {
-	 background: #fff;
-	 transform: scale(1.055);
-}
- .honeycomb-cell::after {
-	 background: #3ea0eb;
-	 opacity: 0.5;
-	 transition: opacity 350ms;
-}
- .honeycomb-cell:hover .honeycomb-cell__title {
-	 opacity: 0;
-}
- .honeycomb-cell:hover::before {
-	 background: #72f88e;
-}
- .honeycomb-cell:hover::after {
-	 opacity: 0;
-}
- .honeycomb__placeholder {
-	 display: none;
-	 opacity: 0;
-	 width: 250px;
-	 margin: 0 12.5px;
-}
-
-/*Our Team- End*/
-
 .title-headings{
     text-align: center;
     color: #dc8c86;
@@ -475,7 +391,7 @@ body{
 /*Quote*/
 
 .intro{
-    background-image: url(images/burundi.jpeg);
+    background-image: url(images/map.jpeg);
     color: white;    
     height: 500px;
 }
@@ -488,7 +404,7 @@ body{
 }
 
 .quote{
-    background-image: url(images/map.jpeg);
+    background-image: url(images/burundi.jpeg);
     background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
@@ -559,6 +475,7 @@ body{
     width: 80%;
     margin-left: 10%;
     margin-top: 5%;
+    border-top: 1px solid #dc8c86;
 }
 #biobox2{
     height: auto;
@@ -568,19 +485,20 @@ body{
 }
 .container-team{
     display: grid;
-    grid-template-columns: repeat(10, 100px);
+    grid-template-columns: repeat(6, 120px);
     grid-column-gap: 5px;
     margin-top: 50px;
     margin-left: 50px;
     width: 1040px;
     position: relative;
     margin-left: 10px;
+    padding-left: 160px;
   }
   
   .item{
     grid-column: span 2;
-    width: 200px;
-    padding: 0 0 231px 0;
+    width: 230px;
+    padding: 0 0 261px 0;
     -o-transform: rotate(-60deg) skewY(30deg);
     -moz-transform: rotate(-60deg) skewY(30deg);
     -webkit-transform: rotate(-60deg) skewY(30deg);
@@ -592,18 +510,18 @@ body{
     margin-top: -50px;
   }
   
-  .item:nth-child(11n+1){ grid-column-start: 1;}
-  .item:nth-child(11n+2){ grid-column-start: 3;}
-  .item:nth-child(11n+3){ grid-column-start: 5;}
-  .item:nth-child(11n+4){ grid-column-start: 7;}
-  .item:nth-child(11n+5){ grid-column-start: 9;}
-  .item:nth-child(11n+6){ grid-column-start: 11;}
-  .item:nth-child(11n+7){ grid-column-start: 2;}
-  .item:nth-child(11n+8){ grid-column-start: 4;}
-  .item:nth-child(11n+9){ grid-column-start: 6;}
-  .item:nth-child(11n+10){ grid-column-start: 8;}
-  .item:nth-child(11n){ grid-column-start: 10;}
-  
+  .item:nth-child(7n+1){ grid-column-start: 2;}
+  .item:nth-child(7n+2){ grid-column-start: 4;}
+  .item:nth-child(7n+3){ grid-column-start: 6;}
+  .item:nth-child(7n+4){ grid-column-start: 1;}
+  .item:nth-child(7n+5){ grid-column-start: 3;}
+  .item:nth-child(7n+6){ grid-column-start: 5;}
+  .item:nth-child(7n){ grid-column-start: 7;}
+
+  .items:nth-child(4n+1){ grid-column-start: 1;}
+  .items:nth-child(4n+2){ grid-column-start: 3;}
+  .items:nth-child(4n+3){ grid-column-start: 5;}
+  .items:nth-child(4n){ grid-column-start: 7;}
   #person-name{
       font-size: 35px;
       color: #dc8c86;
@@ -634,7 +552,6 @@ body{
   }
 
   .hexagon:hover{
-      box-shadow: 10px 10px 10px #888888;
   }
   .hexagon-title{
       color: white;
@@ -665,19 +582,23 @@ body{
     background-size: cover;
   }
   .hexagon-6{
-    background-image: url(images/Alejandra_Budar.jpeg);
+    background-image: url(images/Marc_Sanford.png);
     background-size: cover;
   }
   .hexagon-7{
-    background-image: url(images/Anand_2.jpg);
-    background-size: cover;
-  }
-  .hexagon-8{
     background-image: url(images/Athira_Lonappan.jpg);
     background-size: cover;
   }
-  .hexagon-9{
+  .hexagon-8{
     background-image: url(images/Velton_Dsouza.png);
+    background-size: cover;
+  }
+  .hexagon-9{
+    background-image: url(images/);
+    background-size: cover;
+  }
+  .hexagon-10{
+    background-image: url(images/Manasi_Anantpurkar.jpg);
     background-size: cover;
   }
   .hexagon-11{
@@ -785,6 +706,10 @@ body{
     text-align: center;
 }
 
+.navbar-mobile{
+    visibility: hidden;
+    display: none;
+}
 /*Responsive */
 @media screen and (max-width: 600px){
 
@@ -800,4 +725,70 @@ body{
     .hexagon{
         position: absolute;
     }    
+    .navbars{
+        visibility:hidden;
+    }
+
+    .navbar-mobile{
+        visibility: visible;
+        background-color: white;
+        bottom: 0;
+        right:0;
+        position: fixed;
+        z-index: 1;
+    }
+    .nav-mob-active{
+        border: 1px solid #488a97;
+    }
+
+    .dropdown-item{
+        color: #488a97;
+        font-size: 16px;
+    }
+    .dropdown-item:hover{
+        color: #dc8c86;
+        font-size: 16px;
+    }
+    .container-team{
+        width: 100%;
+        display: block;
+        margin-left: 0;
+    }
+    .careers{
+        text-align: center;
+        font-size: 20px;
+    }
+    .navbar-brand img{
+        margin-top: 10%;
+        width: 100px;
+    }
+    .riseforafr{
+       margin-left: 20%;
+    }
+    .board-for-lap{
+        margin-left: 0;
+    }
+    .submit-mob{
+        width:20%;
+        margin-left: 40%;
+        margin-top: 5%;
+    }
+    .impact-number{
+        text-align: center;
+    }
+    .impact-text{
+        padding-top: 20%;
+    }
+
+    .award-card{
+        margin-left:60%;
+    }
+
+    .award-cards{
+        margin-left:60%;
+    }
+    .abc{
+        width: 60%;
+    }
 }
+

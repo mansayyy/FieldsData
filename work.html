@@ -14,7 +14,7 @@
 <body>
   <!--Navbar-->
   
-    <nav class="navbars ">
+    <nav class="navbars">
         <div >
           <div class="row" style="margin: 0;">
             <div class="col-md-2">
@@ -24,7 +24,7 @@
             <div class="col-md-8">
               
               <div class="row">
-                <ul class="nav nav-tabs">
+                <ul class="nav nav-tabs ">
                   <li class="nav-item tab-c">
                       <a class="nav-link active" href="#methodology">Methodology</a>                
                     </li>
@@ -44,7 +44,7 @@
               </div>
               <div class="row">
                 <ul class="nav">
-                  <li class="nav-item">
+                  <li class="nav-item ">
                       <a class="nav-link active-nav" href="work.html">WORK</a>                
                     </li>
                     <li class="nav-item">
@@ -65,10 +65,42 @@
           
         </div>
     </nav>
+
+    <nav class="navbar-mobile">
+      <a href="index.html" class="navbar-brand"><img src="images/logoFD_transparent_cropped.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-justify"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-mob-active dropdown-toggle" href="work.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              WORK
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#methodology">Methodology</a>
+              <a class="dropdown-item" href="#data">Data</a>
+              <a class="dropdown-item" href="#services">Services</a>
+              <a class="dropdown-item" href="#partners">Partners</a>
+              <a class="dropdown-item" href="#resources">Resources</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="organization.html">ORGANISATION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="impact.html">IMPACT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <h2 class="title-headings" id="methodology">Methodology</h2><hr class="line-break">
     <div class=" d-flex justify-content-center">
       <video width="80%" autoplay loop>
-        <source src="Methodology.mp4" type="video/mp4">
+        <source src="Methodology.mov" type="video/mp4">
       Your browser does not support the video tag.
       </video>
     </div>
@@ -164,7 +196,7 @@ Data Analysis/Science
       <div class="row mb-4">        
         <div class="col-md-4">
           <h3 class="careers">BURUNDI</h3>
-          <img href="" src="images/Rise for Africa-Burundi.png" />
+          <img class="riseforafr" src="images/Rise for Africa-Burundi.png" />
         </div>
         <div class="col-md-4">
           <h3 class="careers">UGANDA</h3>
@@ -179,232 +211,11 @@ Data Analysis/Science
 
     <!--Resources start-->
     <h2 class="title-headings" id="resources">Resources</h2><hr class="line-break">
-    <div class="container">
+    <div class="container bottom">
       <iframe class="airtable-embed" src="https://airtable.com/embed/shr0mvDs1Mun3xC47?backgroundColor=gray&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="700" style="background: transparent; border: 1px solid #ccc;"></iframe>
       <h3>Global Clusters</h3>
       <iframe class="airtable-embed" src="https://airtable.com/embed/shroZ7NOUCWunoUDu?backgroundColor=gray&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="700" style="background: transparent; border: 1px solid #ccc;"></iframe>
     </div><!--Resources end-->
-
-
-
-    <!--
-      <div class="container container1 align-text-middle">
-        <div class="d-flex  justify-content-center">"Accurate data is the lifeblood of good policy and decision-making.”</div>
-      </div>
-
-      <div class="container">
-          <div class="row">
-              <div class="col-md-6 d-flex">
-                <p class=" info">
-                    We collect and share ground-level organisational information to facilitate partnerships and help projects increase their efficiencies and social impact.
-                </p>
-              </div>
-              <div class="col-md-6">
-                  <img  class="align-self-center" style="width:100%"src="images/Laptop_image.png" />
-            </div>
-          </div>
-      </div>    
-
-      <div class="blank-container"></div>-->
-      <!--Vision,Mission and Goals-->
-<!--        <div class="row">
-          <div class="col-md-4">
-            <div class="parent-mis">
-              <div class="mis-card">
-                <div class="mis-card-inner">
-                  <div class="mis-text">
-                    <h2>Vision</h2>
-                    <div>We envision a coordinated, 
-                      transparent and efficient development 
-                      & humanitarian community striving collectively 
-                      for social impact.</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4" > 
-            <div class="parent-mis">
-              <div class="mis-card">
-                <div class="mis-card-inner">
-                  <div class="mis-text">
-                    <h2>Mission</h2>
-                    <div>We empower organisations by providing tailored data-driven solutions to facilitate informed decision-making.</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="parent-mis">
-              <div class="mis-card" >
-                <div class="mis-card-inner">
-                  <div class="mis-text">
-                    <h2>Goals</h2>
-                    <div>We envision a coordinated, 
-                      transparent and efficient development 
-                      & humanitarian community striving collectively 
-                      for social impact.</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-        <div class="blank-container"></div>-->
-      <!--Approach section-->
-
-  <!--    <div class="container py-2">
-        <ul class="nav nav-pills">
-            <li class="nav-item pill-1">
-                <a class="nav-link active " data-toggle="tab" href="#tab1"><div style="margin-left:10%">Approach</div></a>
-            </li>
-            <li class="nav-item pill-1">
-                <a class="nav-link" data-toggle="tab" href="#tab2"><div style="margin-left:10%">Challenges</div></a>
-            </li>
-            <li class="nav-item pill-1">
-                <a class="nav-link" data-toggle="tab" href="#tab3"><div style="margin-left:10%">Solutions</div></a>
-            </li>
-        </ul>
-      </div>
-      <div class="tab-content mt-3">
-            <div class="tab-pane fade show active" id="tab1" role="tabpanel">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-8 d-flex">
-                      <div class=" info">
-                        We use a bottom-up approach to solicit and aggregate information from different actors through a combination of :<br> a) Manual - data collection with the help of on-field consultants <br>b) Automated - data scraping approaches on already provided online public information
-                      </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div>
-                      <img class="app_image" src="images/Laptop_image.png"/>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="tab2" role="tabpanel">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-8 d-flex">
-                      <div class=" info">
-                        <i class="fas fa-angle-right"></i>
-                        <ul>
-                          <li>
-                            Dispersed data: Information is scattered across different reports which are inconsistently updated.
-                          </li>
-                          <li>
-                            Accessibility: A lot of the work is done in remote parts of the world which are not well connected. So, even if an attempt is made to regularly update data, there might still be a lag.
-                          </li>
-                          <li>
-                            Lack of  obligations: There are very few limited and consistent mandates to have a synchronised dataset across the sectors.
-                          </li>
-                          <li>
-                            Prioritisation: Organisations are busy with on-field tasks, which take precedence over providing accurate data
-                          </li>
-                        </ul>
-
-
-                      </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div>
-                      <img class="app_image" src="images/Laptop_image.png"/></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="tab3" role="tabpanel">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-8 d-flex">
-                      <div class=" info">
-                        Inspired by the basic format of the OCHA 4W model - who does what, where and when, we consolidate information about different active organisations. This data would then be transformed and represented in multiple user-friendly formats.  
-                      </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div>
-                      <img class="app_image" src="images/Laptop_image.png"/></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-        <div class="blank-container"></div>-->
-      <!--Our Services-->
-<!--      <div class="container">
-        <h2>Our Services</h2>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card" style="width:75%; margin-left:20%">
-              <img class="card-img-top" src="images/Our-Approach.jpeg" alt="Card image cap">
-              <div class="card-body ">
-                <h5 class="card-title">Methodologies and Processes<br></h5>
-                <a href="#" class="btn app-btn">Know more ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card" style="width:75%;">
-              <img class="card-img-top" src="images/Our-Approach.jpeg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Information and Data Services</h5>
-                <a href="#" class="btn app-btn" >Know more ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="blank-container"></div>-->
-      <!--Our Story-->
-      
-      <div class="blank-container"></div>
-      
-      
-      <!--Footer-
-      <div class="f-card">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="footer-heading">
-              <div class="fh-title">Links</div>
-            </div>
-            <div class="d-flex align-text-center" style="margin-top: 20%;margin-left:15%;">
-              <ul style="list-style-type: none;">
-                <li>About</li>
-                <li>Services</li>
-                <li>Impact</li>
-                <li>Blog</li>
-                <li>Contact Us</li>
-              </ul>
-            </div>
-            
-          </div>
-          <div class="col-md-4">
-            <img src="images/logoFD_negative_transparent.png" style="width:50%; margin-left:25%"/>
-            <br> <div style="margin-left:30%">Fields Data @2021</div>
-          </div>
-          <div class="col-md-4">
-            <div class="footer-heading">
-              <div class="fh-title2">Social</div>
-            </div>
-            <div class="d-flex" style="margin-top: 20%;margin-left:15%;">
-              <ul style="list-style-type: none;">
-                <li>About</li>
-                <li>Services</li>
-                <li>Impact</li>
-                <li>Blog</li>
-                <li>Contact Us</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>-->
-    
-
       
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

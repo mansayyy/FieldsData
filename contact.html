@@ -23,16 +23,16 @@
           <div class="row">
             <ul class="nav nav-tabs">
               <li class="nav-item tab-c">
-                  <a class="nav-link active" href="#"><div >Partner with Us</div></a>                
+                  <a class="nav-link active" href="#partner-with-us"><div >Partner with Us</div></a>                
                 </li>
                 <li class="nav-item tab-c">
-                  <a class="nav-link" href="services.html"><div>Get listed</div></a>
+                  <a class="nav-link" href="#get-listed"><div>Get listed</div></a>
                 </li>
                 <li class="nav-item tab-c">
-                  <a class="nav-link" href="team.html"><div>Collect Data</div></a>
+                  <a class="nav-link" href="#collect-data"><div>Collect Data</div></a>
                 </li>
                 <li class="nav-item tab-c">
-                  <div class="nav-link"><div>Say Hello</div></div>
+                  <a class="nav-link" href="#say-hello"><div>Say Hello</div></a>
                 </li>
             </ul>
           </div>
@@ -60,7 +60,39 @@
     </div>
 </nav>
 
-<h2 class="title-headings"> Partner with Us!</h2><hr class="line-break">
+<nav class="navbar-mobile">
+  <a href="index.html" class="navbar-brand"><img src="images/logoFD_transparent_cropped.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="bi bi-justify"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item nav-mob-active dropdown">
+        <a class="nav-link dropdown-toggle" href="work.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          WORK
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#methodology">Methodology</a>
+          <a class="dropdown-item" href="#data">Data</a>
+          <a class="dropdown-item" href="#services">Services</a>
+          <a class="dropdown-item" href="#partners">Partners</a>
+          <a class="dropdown-item" href="#resources">Resources</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="organization.html">ORGANISATION</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="impact.html">IMPACT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">CONTACT</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<h2 class="title-headings" id="partner-with-us"> Partner with Us!</h2><hr class="line-break">
 <div class="container">
   <p class="careers">
     We believe that together with other organisations we can achieve way more than what we can by ourselves. Big challenges require big collaborations. Hence, we are constantly looking for partners with complementary skills to scale our impact.
@@ -68,10 +100,10 @@
   </p>
 </div>
 
-<h2 class="title-headings"> Get Listed</h2><hr class="line-break">
+<h2 class="title-headings" id="get-listed"> Get Listed</h2><hr class="line-break">
 <div class="container">
   <p class="careers">
-    Would you like to increase your visibility and your chances of collaborating with other organisations? Then get listed by us.
+    Would you like to increase your organisation’s visibility, along with your chances of collaborating with other organisations? Then get listed by us.
     <br>Just fill in these details and we will reach out to you soon.
 
   </p>
@@ -126,7 +158,7 @@
         </div>
       </div>
       <div class="form-group row">
-        <label for="exampleFormControlInput1" class="col-sm-3 col-form-label">Would you be ok if we share your details on other platforms like HDX?</label>
+        <label for="exampleFormControlInput1" class="col-sm-3 col-form-label">Would you be ok with us sharing your details on other platforms such as HDX, IATI?</label>
         <div class="col-sm-9">
           <select id="inputState" class="form-control">
             <option selected>Yes</option>
@@ -142,7 +174,7 @@
 
 </div>
 
-<h2 class="title-headings" style="margin-top: 5%;"> Collect Data</h2><hr class="line-break">
+<h2 class="title-headings" style="margin-top: 5%;" id="collect-data"> Collect Data</h2><hr class="line-break">
 <div class="container">
   <p class="careers">
     Help us increase the visibility of local organisations in your area by collecting data for us.
@@ -154,36 +186,40 @@
   <div class="row">
     <div class="col-md-3">
       <div class="collectdata card">
-        <div class="careers">1. <br> Fill the form below</div>
+        <i class="service-icon bi bi-pencil-square"></i>
+        <div class="careers"> <br> Fill the form below</div>
       </div>      
     </div>
     <div class="col-md-3">
       <div class="collectdata card">
-        <div class="careers">2. <br> We will get in touch with you</div>
+        <i class="service-icon bi bi-mailbox"></i>
+        <div class="careers"><br> We will get in touch with you</div>
       </div>      
     </div>
     <div class="col-md-3">
       <div class="collectdata card">
-        <div class="careers">3. <br> We will have quick virtual training</div>
+        <i class="service-icon bi bi-laptop"></i>
+        <div class="careers"> <br> We will have quick virtual training</div>
       </div>      
     </div>
     <div class="col-md-3">
       <div class="collectdata card">
-        <div class="careers">4. <br> And get,set,go !</div>
+        <i class="service-icon bi bi-hand-thumbs-up"></i>
+        <div class="careers"><br> And get,set,go !</div>
       </div>      
     </div>
   </div>
 </div>
 
 
-<h2 class="title-headings" style="margin-top: 5%;"> Say Hello!</h2><hr class="line-break">
+<h2 class="title-headings" style="margin-top: 5%;" id="say-hello"> Say Hello! <i class="bi bi-cup-fill"></i></h2><hr class="line-break">
 
 <div class="container">
   <p class="careers">If you would like to grab a virtual/physical coffee with any of us and talk about :<br>
     a) the problems faced by local organisations and ideas to tackle them<br>
     b) how we can help you<br>
     c) how you can help us<br>
-    d) or just chat till the coffee gets over, then drop us a line below
+    OR <br>just chat till the coffee gets over, then drop us a line below
     </p>
 
     <div class="contact-form">
@@ -194,12 +230,13 @@
             <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
           </div>
         </div>
+        <!--
         <div class="form-group row">
           <label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Contact</label>
           <div class="col-sm-10">
             <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="+11 1111111111">
           </div>
-        </div>
+        </div>-->
         <div class="form-group row">
           <label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Email</label>
           <div class="col-sm-10">
@@ -212,7 +249,7 @@
             <textarea type="password" class="form-control" id="inputPassword" placeholder="Hi there"></textarea>
           </div>
         </div>
-        <button type="button" class="btn btn-primary ">Submit</button>
+        <button type="button" class="btn btn-primary bottom">Submit</button>
       </form>
     </div>
 </div>
