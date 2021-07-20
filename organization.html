@@ -1,5 +1,4 @@
 
-
 <!doctype html>
 
 <html lang="en">
@@ -24,7 +23,7 @@
           </div>
 
           <div class="col-md-8">
-            <div class="row">
+            <div class="row" id="sub-navigation">
               <ul class="nav nav-tabs">
                 <li class="nav-item tab-c">
                     <a class="nav-link active"  href="#about">About</a>                
@@ -43,7 +42,7 @@
                   </li>
               </ul>
             </div>
-
+            
 
             <div class="row">
               <ul class="nav">
@@ -51,7 +50,7 @@
                     <a class="nav-link " href="work.html"><div >WORK</div></a>                
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active-nav" href="organization.html">ORGANISATION</a>
+                    <a class="nav-link active-nav" id="sub-nav-driver" href="organization.html">ORGANISATION</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="impact.html"><div>IMPACT</div></a>
@@ -163,11 +162,13 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3"><h3 class="careers" style="text-align: right;margin-top:2%">Ask a question</h3></div>
-          <div class="col-md-6"><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="How do I get benefitted from your work?"></div>
-          <div class="col-md-3 "><div class="btn btn-primary submit-mob">Submit</div></div>
+          <div class="col-md-6"><input type="text" name="ques_faq" class="form-control" id="exampleFormControlInput1" placeholder="How do I get benefitted from your work?"></div>
+          <div class="col-md-3 "><div class="btn btn-primary submit-mob" type="submit" name="submit" value="Submit">Submit</div></div>
+          
+
         </div>
       </div>
-   
+      
      <h2 class="title-headings">Questions already answered</h2><hr class="line-break">
        
      <div class="ques-card">
@@ -274,11 +275,18 @@
           </div>
          </div>
        </div>-->
-       <p class="careers"> Currently we don’t have any positions open, but if you find our work interesting and would like to connect with us for the future,<br> then drop us an email at 
-         <a href="mailto: 'Source Sans Pro', sans-serif;">careers@fieldsdata.org </a> 
-        with the Subject line:<span style="font-weight: bold;">"You could definitely use my skills"</span>   
-        <br>Or you could also volunteer with us on shorter projects by writing to the above mentioned email address 
-        with the Subject line: <span style="font-weight: bold;">"I have some time on my hands"</span>    </p>
+       <h1 class="noposition" >Currently we don’t have any positions open <i class="bi bi-emoji-frown"></i></h1>
+       <hr style="width: 50%;color:#488a97;margin-left:0;">
+       <h1 class="noposition" style="text-align: left;margin-top:6%">Work with Us</h1>
+       <p class="careers" style="margin-bottom: 6%;">         
+        If you find our work interesting and would like to connect with us for the future,then drop us an email at 
+         <a style="text-decoration:underline" href="mailto: 'Source Sans Pro', sans-serif;">careers@fieldsdata.org </a> 
+        with the Subject line:<span style="font-weight: bold;color:#dc8c86">"You could definitely use my skills"</span>   
+        <br>Or </p>
+        <hr style="width: 50%;color:#488a97;margin-left:0;">
+       <h1 class="noposition" style="text-align: left;margin-top:6%">Volunteer with Us</h1>
+       <p class="careers" style="margin-bottom: 20%;">         
+        You could also volunteer with us on shorter projects by writing to the same email address <a style="text-decoration:underline" href="mailto: 'Source Sans Pro', sans-serif;">careers@fieldsdata.org </a> with the Subject line: <span style="font-weight: bold;color:#dc8c86">"I have some time on my hands"</span> </p>
      </div>
     
       
@@ -296,6 +304,18 @@
       $('.tab-c a').removeClass('active');
       $(this).addClass('active');           
   });
+  </script>
+  <script>
+    document.getElementById("sub-navigation").style.visibility="hidden";
+
+    document.getElementById("sub-nav-driver").onmouseover=(function(){
+      document.getElementById("sub-navigation").style.visibility="visible";
+    });
+
+    document.getElementById("sub-navigation").onmouseover=(function(){
+      document.getElementById("sub-navigation").style.visibility="visible";
+    });
+
   </script>
   <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
 <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@alejandrabudar","postsPerLine":2,"limit":10,"picture":"big","fields":["description","author","claps","publishAt"],"ratio":"landscape"}})</script>
@@ -370,7 +390,7 @@
 
   function hex_ten(){
     x.style.visibility = 'visible';
-    x.innerHTML = "Manasi is currently pursuing her Bachelor's degree in Computer Engineering from Don Bosco Institute of Technology, Mumbai. She has been making stylish web pages since 1901.(Kidding, it's been 2 years) .She is your go to person when you need to get some work done - be it writing some code or being a wingwoman.Along with web development, she is also interested in coding in C and Python.<br> Along with websites, she has got a special interest in Mathematics. Although all the above statements make her look like a nerd, she's not. She is currently staying in Thane and loves to spend time with her family. She can sing, play keyboard and laugh at the drop of a hat. ";
+    x.innerHTML = "Manasi is currently pursuing her Bachelor's degree in Computer Engineering from Don Bosco Institute of Technology, Mumbai. She has been combining analytical technical work with creative designs, to come up with stylish web pages. Along with web development, she is also interested in coding in C and Python. She is your go-to person when you need to get some work done - be it writing some code or being a wingwoman.<br>Along with websites, she has a special interest in Mathematics. (Psst psst.. she gets paid to solve math problems.) Although all the above statements make her look like a nerd, she's not. She can sing, play keyboard and laugh at the drop of a hat. This outgoing extrovert can strike a conversation with anyone, however she cherishes every minute of her day spent at home in Thane with her beloved family.";
     document.getElementById("person-name").innerHTML="Manasi Anantpurkar";
     document.getElementById("person-title").innerHTML="Intern";
     biob.style.visibility="visible";

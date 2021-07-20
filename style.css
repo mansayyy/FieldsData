@@ -369,6 +369,14 @@ body{
     font-size: 20px;
     color: #488a97;
 }
+
+.noposition{
+    font-family:  'Source Sans Pro', sans-serif;
+    font-size: 32px;
+    color: #488a97;
+    text-align: center;
+    margin-bottom: 8%;
+}
 .apply-btn{
     background-color:#488a97;
     color:white;
@@ -415,8 +423,9 @@ body{
 .actual-quote{
     padding-top: 80px;
     font-weight: bold;
-    width: 60%;
-    padding-left: 5%;
+    width: 80%;
+    padding-left: 15%;
+    text-align: center;
     }
 /*Impact Start*/
 .impact-number{
@@ -458,10 +467,8 @@ body{
 .collectdata{
     padding: 4%;
     height: 100%;
-}
-
-.collectdata:hover{
-    border: 1px solid #488a97;
+    border: 0;
+    text-align: center;
 }
 .container{
     width: 80%;
@@ -791,4 +798,5 @@ body{
         width: 60%;
     }
 }
+
 

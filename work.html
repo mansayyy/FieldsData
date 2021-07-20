@@ -23,7 +23,7 @@
 
             <div class="col-md-8">
               
-              <div class="row">
+              <div class="row" id="sub-navigation">
                 <ul class="nav nav-tabs ">
                   <li class="nav-item tab-c">
                       <a class="nav-link active" href="#methodology">Methodology</a>                
@@ -44,8 +44,8 @@
               </div>
               <div class="row">
                 <ul class="nav">
-                  <li class="nav-item ">
-                      <a class="nav-link active-nav" href="work.html">WORK</a>                
+                  <li class="nav-item "id="sub-nav-driver" >
+                      <a class="nav-link active-nav"  href="work.html">WORK</a>                
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="organization.html"><div>ORGANISATION</div></a>
@@ -225,11 +225,13 @@ Data Analysis/Science
 
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
   <script>
-    $('.tab-c a').click(function() {
-      $('.tab-c a').removeClass('active');
-      $(this).addClass('active');           
-  });
+    document.getElementById("sub-navigation").style.visibility="hidden";
+
+    document.getElementById("sub-nav-driver").onmouseover=(function(){
+      document.getElementById("sub-navigation").style.visibility="visible";
+    });
   </script>
 </body>
 </html>

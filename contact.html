@@ -20,7 +20,7 @@
         </div>
 
         <div class="col-md-8">
-          <div class="row">
+          <div class="row" id="sub-navigation">
             <ul class="nav nav-tabs">
               <li class="nav-item tab-c">
                   <a class="nav-link active" href="#partner-with-us"><div >Partner with Us</div></a>                
@@ -41,13 +41,13 @@
               <li class="nav-item">
                   <a class="nav-link " href="work.html"><div>WORK</div></a>                
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" >
                   <a class="nav-link" href="organization.html"><div>ORGANISATION</div></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="impact.html"><div>IMPACT</div></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" id="sub-nav-driver">
                   <a class="nav-link active-nav" href="contact.html"><div >CONTACT</div></a>
                 </li>
             </ul>
@@ -187,25 +187,25 @@
     <div class="col-md-3">
       <div class="collectdata card">
         <i class="service-icon bi bi-pencil-square"></i>
-        <div class="careers"> <br> Fill the form below</div>
+        <div class="careers"><span style="color:#dc8c86; font-weight:bold">Express Interests</span> <br> Fill the form below, to get in touch with us</div>
       </div>      
     </div>
     <div class="col-md-3">
       <div class="collectdata card">
         <i class="service-icon bi bi-mailbox"></i>
-        <div class="careers"><br> We will get in touch with you</div>
+        <div class="careers"><span style="color:#dc8c86; font-weight:bold">Feedback </span><br> We will review your application and get back to you</div>
       </div>      
     </div>
     <div class="col-md-3">
       <div class="collectdata card">
         <i class="service-icon bi bi-laptop"></i>
-        <div class="careers"> <br> We will have quick virtual training</div>
+        <div class="careers"> <span style="color:#dc8c86; font-weight:bold">Training</span><br> If your profile gets selected, then we will have a short online training for you</div>
       </div>      
     </div>
     <div class="col-md-3">
       <div class="collectdata card">
         <i class="service-icon bi bi-hand-thumbs-up"></i>
-        <div class="careers"><br> And get,set,go !</div>
+        <div class="careers"><span style="color:#dc8c86; font-weight:bold">Get,set and Go!</span><br> That’s it. You are all set, to be a part of our international network!</div>
       </div>      
     </div>
   </div>
@@ -268,10 +268,12 @@
 <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
 <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@alejandrabudar","postsPerLine":2,"limit":10,"picture":"big","fields":["description","author","claps","publishAt"],"ratio":"landscape"}})</script>
 <script>
-  $('.tab-c a').click(function() {
-    $('.tab-c a').removeClass('active');
-    $(this).addClass('active');           
-});
+  document.getElementById("sub-navigation").style.visibility="hidden";
+
+  document.getElementById("sub-nav-driver").onmouseover=(function(){
+    document.getElementById("sub-navigation").style.visibility="visible";
+  });
+
 </script>
 </body>
 </html>
