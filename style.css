@@ -715,10 +715,10 @@ body{
 
 .navbar-mobile{
     visibility: hidden;
-    display: none;
 }
 /*Responsive */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px)
+{
 
     .careers{
         font-size: 16px;
