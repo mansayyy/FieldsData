@@ -139,10 +139,10 @@
   
     <div>
       <div class="container-team" class="board-for-lap">
-        <div class="item items"><div class="hexagon hexagon-7" id="hexagon-1" onclick="hex_twelve()"><div class="hexagon-title">Anand </div></div></div>
-        <div class="item items"><div class="hexagon hexagon-7" onclick="hex_thirteen()"><div class="hexagon-title">Arnau </div></div></div>
-        <div class="item items"><div class="hexagon hexagon-7" onclick="hex_fourteen()"><div class="hexagon-title">Pablo </div></div></div>
-        <div class="item items"><div class="hexagon hexagon-7" onclick="hex_fifteen()"><div class="hexagon-title">Jose </div></div></div>
+        <div class="item items"><div class="hexagon hexagon-11" id="hexagon-1" onclick="hex_eleven()"><div class="hexagon-title">Halimatou </div></div></div>
+        <div class="item items"><div class="hexagon hexagon-12" onclick="hex_twelve()"><div class="hexagon-title">Hellen </div></div></div>
+        <div class="item items"><div class="hexagon hexagon-13" onclick="hex_thirteen()"><div class="hexagon-title">Lee </div></div></div>
+        <div class="item items"><div class="hexagon hexagon-14" onclick="hex_fourteen()"><div class="hexagon-title">Isidore </div></div></div>
       </div>
       
     </div>
@@ -397,19 +397,37 @@
   }
 
   y=document.getElementById("about-the-person2");
+  biob2=document.getElementById("biobox2");
+  biob2.style.visibility="hidden";
+  function hex_eleven(){
+    y.style.visibility = 'visible';
+    y.innerHTML = "Halimatou is an experienced humanitarian professional, currently working as the Partnerships Manager with BSTP. Her professional life spans across UN agencies, Oxfam and China National Petroleum Corporation and has mainly worked in Chad and Guinea. Skilled in Management, Public Policies, Good Governance, Advocacy and Communication, she has a Master in Management from 2IE and a Bachelor of Science in Sociology from University of Houston-Downtown.";
+    document.getElementById("person-name2").innerHTML="Halimatou Kaba";
+    document.getElementById("person-title2").innerHTML="Partnerships Manager at Bourse de Sous-Traitance et de Partenariats Guinée(BSTP)";
+    biob2.style.visibility="visible";
+  }
+
   function hex_twelve(){
     y.style.visibility = 'visible';
-    y.innerHTML = "Hey I am Anand! I like to attend meetings";
-    document.getElementById("person-name2").innerHTML="Anand Ramachandran";
-    document.getElementById("person-title2").innerHTML="Co founder";
-    document.getElementById("biobox2").style.border='2px solid #dc8c86';
+    y.innerHTML = "As the founder and Executive director of Rape Hurts Foundation in Uganda, Hellen is a passionate leader, Human Rights Defender, Gender Activist, a mother to thousands and advocate for children’s rights. In 2018, she received the Trust Law Awards from the Thomson Reuters Foundation and was nominated for the Global Thinkers Forum 2018 Awards for Excellence in the category of ‘African Female Leaders'. Hellen’s educational background includes a Diploma in Laws from Law Development Center, Bachelors in Environmental Science from Makerere University Kampala, Postgraduate degree in Economic Policy and Policy Analysis and a Master of Arts in Gender, Women and Development Studies, from Busoga University,Uganda.";
+    document.getElementById("person-name2").innerHTML="Hellen Lunkuse T. Waiswa";
+    document.getElementById("person-title2").innerHTML="Founder & Executive Director of Rape Hurts Foundation, Board Member Vienna NGO Committee on Drugs";
+    biob2.style.visibility="visible";
   }
+
   function hex_thirteen(){
     y.style.visibility = 'visible';
-    y.innerHTML = "Hey I am Anand! I like to attend meetings";
-    document.getElementById("person-name2").innerHTML="Anand Ramachandran";
-    document.getElementById("person-title2").innerHTML="Co founder";
-    document.getElementById("biobox2").style.border='2px solid #dc8c86';
+    y.innerHTML = "Based in Johannesburg, Lee is a partner at Fliptin Technologies and is the Co-Founder of AI in Africa, where she makes great use of her background in software engineering by exposing youth,particularly girls, to artificial intelligence and encouraging them to experiment with homegrown solutions for solving community (and global) problems. Their mission is to promote STEAM careers and diversity and inclusion in innovation. Lee has extensive experience in IT and business in both private and public sector organizations. Her academic background is in IT, technology and business management, with an MBA from the University of Liverpool.";
+    document.getElementById("person-name2").innerHTML="Lee (Naicker) Chana";
+    document.getElementById("person-title2").innerHTML="Co-founder AI in Africa, Partner at Fliptin Technologies";
+    biob2.style.visibility="visible";
+  }
+  function hex_fourteen(){
+    y.style.visibility = 'visible';
+    y.innerHTML = "Starting as a media professional, Isidore transitioned into the UN ecosystem and has worked in various capacities for the past 2 decades mainly in Burundi. He also spent six years in peace operations in Cote d'Ivoire as a Reporting and Outreach Officer/strategic information analyst for the DPKO, monitoring the UNSC embargo implementation. With long experience in communication strategy, ​he is currently the National Coordinator and Peacebuilding Programme Manager for the National Federation for Children's Rights Defense. Isidore holds a Diploma in Business Management from Amity University, India and Degree in English Language & Literature from the University of Burundi. Isidore has been one of the key elements of FD, who has helped lay the founding stones of this organisation with his knowledge and network.";
+    document.getElementById("person-name2").innerHTML="Isidore Nteturuye";
+    document.getElementById("person-title2").innerHTML="National Coordinator at National Federation for Children's Rights Defense";
+    biob2.style.visibility="visible";
   }
 </script>
 </body>

@@ -405,13 +405,14 @@ body{
 }
 
 .actual-intro{
-    padding-top: 200px;
+    padding-top: 60px;
     font-weight: bold;
     width: 60%;
     padding-left: 5%;
 }
 
 .quote{
+    margin-top:5%;
     background-image: url(images/burundi.jpeg);
     background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -489,6 +490,7 @@ body{
     width: 80%;
     margin-left: 10%;
     margin-top: 5%;
+    border-top: 1px solid #dc8c86;
 }
 .container-team{
     display: grid;
@@ -536,6 +538,16 @@ body{
   }
   #person-title{
     font-size: 30px;
+    color: #dc8c86;
+    text-align: center;
+  }
+  #person-name2{
+    font-size: 35px;
+    color: #dc8c86;
+    text-align: center;
+}
+#person-title2{
+    font-size: 26px;
     color: #dc8c86;
     text-align: center;
   }
@@ -609,7 +621,19 @@ body{
     background-size: cover;
   }
   .hexagon-11{
-    background-image: url(images/Manasi_Anantpurkar.jpg);
+    background-image: url(images/board_member1.JPG);
+    background-size: cover;
+  }
+  .hexagon-12{
+    background-image: url(images/board_member2.JPG);
+    background-size: cover;
+  }
+  .hexagon-13{
+    background-image: url(images/board_member3.JPG);
+    background-size: cover;
+  }
+  .hexagon-14{
+    background-image: url(images/board_member4.JPG);
     background-size: cover;
   } 
     
