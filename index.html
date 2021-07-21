@@ -21,7 +21,23 @@
             </div>
 
             <div class="col-md-8">
-              
+              <div class="row" id="sub-navigation">
+                <ul class="nav nav-tabs">
+                  <li class="nav-item tab-c">
+                      <a class="nav-link active" href="#partner-with-us"><div >Partner with Us</div></a>                
+                    </li>
+                    <li class="nav-item tab-c">
+                      <a class="nav-link" href="#get-listed"><div>Get listed</div></a>
+                    </li>
+                    <li class="nav-item tab-c">
+                      <a class="nav-link" href="#collect-data"><div>Collect Data</div></a>
+                    </li>
+                    <li class="nav-item tab-c">
+                      <a class="nav-link" href="#say-hello"><div>Say Hello</div></a>
+                    </li>
+                </ul>
+              </div>
+
               <div class="row">
                 <ul class="nav">
                   <li class="nav-item">
@@ -111,6 +127,8 @@
       $('.tab-c a').removeClass('active');
       $(this).addClass('active');           
   });
+
+  document.getElementById('sub-navigation').style.visibility="hidden";
   </script>
 </body>
 </html>

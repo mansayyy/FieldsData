@@ -29,7 +29,7 @@ body{
 
 /*Navbar*/
 .navbar-brand img{
-    margin-top: 25%;
+    margin-top: 17%;
     width: 150px;
 }
 .nav-item .nav-link{
@@ -568,16 +568,16 @@ body{
       font-size: 28px;
   }
   .hexagon-1{
-    background-image: url(images/Anand_2.jpg);
+    background-image: url(images/Anand_Edited.jpg);
     background-size: cover;
   }
 
   .hexagon-2{
-    background-image: url(images/Arnau_Rovira.jpg);
+    background-image: url(images/Arnau_Edited.jpg);
     background-size: cover;
   }
   .hexagon-3{
-    background-image: url(images/Pablo.png);
+    background-image: url(images/Pablo_edited.png);
     background-size: cover;
   }
   .hexagon-4{
@@ -589,11 +589,11 @@ body{
     background-size: cover;
   }
   .hexagon-6{
-    background-image: url(images/Marc_Sanford.png);
+    background-image: url(images/Marc_Edited.png);
     background-size: cover;
   }
   .hexagon-7{
-    background-image: url(images/Athira_Lonappan.jpg);
+    background-image: url(images/Athira_Edited.jpg);
     background-size: cover;
   }
   .hexagon-8{
@@ -637,8 +637,13 @@ body{
   .item:nth-child(11n+10){ grid-column-start: 8;}
   .item:nth-child(11n){ grid-column-start: 10;}
   }
-  
+  @media(min-width: 850px){
+      .navbar-mobile{
+          display: none;
+      }
+  } 
   @media(max-width: 850px){
+
     .container{
       grid-template-columns: repeat(6, 100px);
       width: 620px
@@ -766,7 +771,7 @@ body{
         font-size: 20px;
     }
     .navbar-brand img{
-        margin-top: 10%;
+        margin-top: 5%;
         width: 100px;
     }
     .riseforafr{
