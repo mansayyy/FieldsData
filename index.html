@@ -84,7 +84,7 @@
       </div>
     </nav>
     <div class=" intro">
-      <img style="margin-top:0;width:20%;margin-left:40%" src="images/logoFD_negative_transparent.png"/>
+      <img style="margin-top:0;width:25%;margin-left:37%" src="images/logoFD_negative_transparent.png"/>
         <h3 class="actual-intro">We empower organisations by providing tailored data-driven solutions to facilitate informed decision-making.</h3>
     </div>
 
@@ -92,8 +92,8 @@
     <h2 class="title-headings" id="resources">Challenges</h2><hr class="line-break">
 
     <div class="container">
-      <video width="100%" autoplay loop>
-        <source src="FD_Challenges.mov" type="video/mp4">
+      <video  id="video_background" width="100%" autoplay loop>
+        <source  src="FD_Challenges.mov" type="video/mp4">
       Your browser does not support the video tag.
       </video>
     </div>
@@ -145,6 +145,14 @@
   });
 
   document.getElementById('sub-navigation').style.visibility="hidden";
+  </script>
+  <script>
+    var video = document.getElementById("video_background");
+video.addEventListener("canplay", function() {
+  setTimeout(function() {
+    video.play();
+  }, 5000);
+});
   </script>
 </body>
 </html>

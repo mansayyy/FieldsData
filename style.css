@@ -29,7 +29,7 @@ body{
 
 /*Navbar*/
 .navbar-brand img{
-    margin-top: 17%;
+    margin-top: 15%;
     width: 150px;
 }
 .nav-item .nav-link{
@@ -399,15 +399,13 @@ body{
 /*Quote*/
 
 .intro{
-    background-image: url(images/map.jpeg);
-    color: white;    
-    height: 500px;
+    background-image: url(images/map_edited.png);
+  background-size: cover;
+    color: white;
 }
 
 .actual-intro{
     padding-top: 60px;
-    font-weight: bold;
-    width: 60%;
     padding-left: 5%;
 }
 
