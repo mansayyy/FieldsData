@@ -743,6 +743,7 @@ body{
 }
 
 .navbar-mobile{
+    display: none;
     visibility: hidden;
 }
 /*Responsive */
@@ -772,6 +773,7 @@ body{
         right:0;
         position: fixed;
         z-index: 1;
+        display: block;
     }
     .nav-mob-active{
         border: 1px solid #488a97;
