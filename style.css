@@ -699,13 +699,6 @@ body{
     margin-left: 10%;
     text-align: center;
 }
-
-.award-card:hover{
-    border: 2px solid #488a97;
-}
-.award-cards:hover{
-    border: 2px solid #488a97;
-}
 .award-image{
     height: 80px;
     margin-left: 38%;
