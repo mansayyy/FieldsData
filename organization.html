@@ -104,15 +104,20 @@
   </div>
 </nav>
 
-<h2 class="title-headings" id="about" > Our Story</h2><hr class="line-break">
+<!--Our Story Start-->
+<div id="about">
+<h2 class="title-headings"  > Our Story</h2><hr class="line-break">
 <div class="container" >
   <p class="careers">  Having worked in the humanitarian and development sectors for many years, we could notice gaps in the ways organisations functioned, especially how they communicated with each other. We understood that getting ground-level information was difficult to collect for many organisations, let alone share the findings with other entities and even in some cases, sharing within the organisation. Projects have been putting in efforts day in and day out, however, their knowledge doesn’t seem to get leveraged and many organisations seem to be engrossed in fighting it out alone. This lack of sharing directly impacts the communities and as a lot of resources and efforts seem to be lost in reinventing the wheel.
     <br><br>
     Over multiple coffee/beverage conversations, we got together and decided to do something about it. Inspired by OCHA’s 4W framework, we decided to utilise our on-field network to scope the regions and consolidate the information which would be made available for everyone to see. We hope, with this information, organisations can collaborate with existing projects and rapidly scale-up their social impact. </p>
 
 </div>
-      
-      <h2 class="title-headings" id="our-team">Our Team</h2><hr class="line-break">
+</div>
+<!--Our Story End-->
+<!--Our Team Start-->
+<div id="our-team">
+      <h2 class="title-headings">Our Team</h2><hr class="line-break">
   <div>
       <div class="container-team">
         <div class="item"><div class="hexagon hexagon-1" id="hexagon-1" onclick="hex_one()"><div class="hexagon-title">Anand </div></div></div>
@@ -155,10 +160,11 @@
         </div>
       </div>
     </div>
-  
+  </div>
+  <!--Our team end-->
   <!--FAQs start-->
-
-      <h2 class="title-headings" id="faqs">FAQs</h2><hr class="line-break">
+  <div id="faqs">
+      <h2 class="title-headings" >FAQs</h2><hr class="line-break">
       <div class="container">
         <div class="row">
           <div class="col-md-3"><h3 class="careers" style="text-align: right;margin-top:2%">Ask a question</h3></div>
@@ -214,18 +220,19 @@
        <div class="col-md-10 careers">We have used those sectors most commonly used by the humanitarian community thanks to the work of clusters/groups. We have subsequently adapted this information to the IATI standard.</div>
      </div>
     </div>
-   
+  </div>
       <!--FAQ end-->
-
-      
-<h2 class="title-headings" id="blogs">Content</h2><hr class="line-break">
+      <div id="blogs">
+<h2 class="title-headings" >Content</h2><hr class="line-break">
 <!--Content start (Blog)-->
   
     <div id="medium-widget" class="container" ></div>
+  </div>
 <!--Content end (Blog)-->
 
       <!--Careers start-->
-     <h2 class="title-headings" id="careers">Careers</h2><hr class="line-break">
+      <div id="careers">
+     <h2 class="title-headings" >Careers</h2><hr class="line-break">
 
      <div class="container" style="margin-bottom:10%">
        <!--
@@ -288,7 +295,7 @@
        <p class="careers" style="margin-bottom: 20%;">         
         You could also volunteer with us on shorter projects by writing to the same email address <a style="text-decoration:underline" href="mailto: 'Source Sans Pro', sans-serif;">careers@fieldsdata.org </a> with the Subject line: <span style="font-weight: bold;color:#dc8c86">"I have some time on my hands"</span> </p>
      </div>
-    
+    </div>
       
   
   <!-- jQuery library -->
@@ -305,7 +312,7 @@
       $(this).addClass('active');           
   });
   </script>
-  <script>
+<!--  <script>
     document.getElementById("sub-navigation").style.visibility="hidden";
 
     document.getElementById("sub-nav-driver").onmouseover=(function(){
@@ -316,7 +323,7 @@
       document.getElementById("sub-navigation").style.visibility="visible";
     });
 
-  </script>
+  </script>-->
   <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
 <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@alejandrabudar","postsPerLine":2,"limit":10,"picture":"big","fields":["description","author","claps","publishAt"],"ratio":"landscape"}})</script>
 <script>
@@ -430,5 +437,43 @@
     biob2.style.visibility="visible";
   }
 </script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(document).on("scroll", onScroll);
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+          $(document).off("scroll");
+           $('a').each(function () {
+              $(this).removeClass('active');
+          })
+          $(this).addClass('active');
+           var target = this.hash,
+           menu = target;
+           $target = $(target);
+         $('html, body').stop().animate({
+              'scrollTop': $target.offset().top+2
+          }, 600, 'swing', function () {
+              window.location.hash = target;
+              $(document).on("scroll", onScroll);
+          });
+      });
+  });
+  
+  function onScroll(event){
+      var scrollPos = $(document).scrollTop();
+      $('#sub-navigation a').each(function () {
+          var currLink = $(this);
+         var refElement = $(currLink.attr("href"));
+          if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+              $('#sub-navigation ul li a').removeClass("active");
+              currLink.addClass("active");
+          }
+          else{
+              currLink.removeClass("active");
+          }
+      });
+  }
+  </script>
 </body>
 </html>

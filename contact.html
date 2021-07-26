@@ -92,15 +92,17 @@
   </div>
 </nav>
 
-<h2 class="title-headings" id="partner-with-us"> Partner with Us!</h2><hr class="line-break">
+<div id="partner-with-us">
+<h2 class="title-headings"> Partner with Us!</h2><hr class="line-break">
 <div class="container">
   <p class="careers">
     We believe that together with other organisations we can achieve way more than what we can by ourselves. Big challenges require big collaborations. Hence, we are constantly looking for partners with complementary skills to scale our impact.
   <br><br>Why don’t we have a quick chat and see how we can help each other out? <br>Write to me at partner@fieldsdata.org or drop me a message on Linkedin
   </p>
-</div>
+</div></div>
 
-<h2 class="title-headings" id="get-listed"> Get Listed</h2><hr class="line-break">
+<div id="get-listed">
+<h2 class="title-headings"> Get Listed</h2><hr class="line-break">
 <div class="container">
   <p class="careers">
     Would you like to increase your organisation’s visibility, along with your chances of collaborating with other organisations? Then get listed by us.
@@ -172,9 +174,10 @@
     </form>
   </div>
 
-</div>
+</div></div>
 
-<h2 class="title-headings" style="margin-top: 5%;" id="collect-data"> Collect Data</h2><hr class="line-break">
+<div id="collect-data">
+<h2 class="title-headings" > Collect Data</h2><hr class="line-break">
 <div class="container">
   <p class="careers">
     Help us increase the visibility of local organisations in your area by collecting data for us.
@@ -209,11 +212,10 @@
       </div>      
     </div>
   </div>
-</div>
+</div></div>
 
-
-<h2 class="title-headings" style="margin-top: 5%;" id="say-hello"> Say Hello! <i class="bi bi-cup-fill"></i></h2><hr class="line-break">
-
+<div id="say-hello">
+<h2 class="title-headings" style="margin-top: 5%;" > Say Hello! <i class="bi bi-cup-fill"></i></h2><hr class="line-break">
 <div class="container">
   <p class="careers">If you would like to grab a virtual/physical coffee with any of us and talk about :<br>
     a) the problems faced by local organisations and ideas to tackle them<br>
@@ -252,10 +254,7 @@
         <button type="button" class="btn btn-primary bottom">Submit</button>
       </form>
     </div>
-</div>
-
-
-  
+</div></div>
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -275,5 +274,42 @@
   });
 
 </script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(document).on("scroll", onScroll);
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+          $(document).off("scroll");
+           $('a').each(function () {
+              $(this).removeClass('active');
+          })
+          $(this).addClass('active');
+           var target = this.hash,
+           menu = target;
+           $target = $(target);
+         $('html, body').stop().animate({
+              'scrollTop': $target.offset().top+2
+          }, 600, 'swing', function () {
+              window.location.hash = target;
+              $(document).on("scroll", onScroll);
+          });
+      });
+  });
+  
+  function onScroll(event){
+      var scrollPos = $(document).scrollTop();
+      $('#sub-navigation a').each(function () {
+          var currLink = $(this);
+         var refElement = $(currLink.attr("href"));
+          if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+              $('#sub-navigation ul li a').removeClass("active");
+              currLink.addClass("active");
+          }
+          else{
+              currLink.removeClass("active");
+          }
+      });
+  }
+  </script>
 </body>
 </html>

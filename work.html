@@ -97,7 +97,10 @@
         </ul>
       </div>
     </nav>
-    <h2 class="title-headings" id="methodology">Methodology</h2><hr class="line-break">
+
+    <!--Methodology STart-->
+    <div id="methodology">
+    <h2 class="title-headings" >Methodology</h2><hr class="line-break">
     <div class=" d-flex justify-content-center">
       <video width="80%" autoplay loop>
         <source src="Methodology.mov" type="video/mp4">
@@ -110,16 +113,22 @@
         <br>b)<span style="font-weight:bold">Public source</span>- data extraction from platforms like IATI, HDX etc.<br>c) <span style="font-weight:bold">Organisations</span>  - sourcing information directly from organisations
       </div>
     </div>
+  </div>
+
+    <!--Methodology End-->
 
     <!--Data start-->
-    <h2 class="title-headings" id="data">Data</h2><hr class="line-break">
+    <div id="data">
+    <h2 class="title-headings" >Data</h2><hr class="line-break">
     <div class="container">
       <iframe width="100%" height="900px" src="https://datastudio.google.com/embed/reporting/2314578f-abfd-4539-ba12-d4bb6ed000f8/page/jjopB" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
+  </div>
 
     <!--Data end-->
     <!--Services start-->
-    <h2 class="title-headings" id="services">Services</h2><hr class="line-break">
+    <div id="services">
+    <h2 class="title-headings" >Services</h2><hr class="line-break">
     <div class="container" style=" padding-bottom:5%">      
     <h4 style="text-align: center; padding:2%;color:#dc8c86">Methodologies and Processes</h4>
     <div class="row">
@@ -158,6 +167,7 @@
 
       
     </div>
+    
     <h4 style="text-align: center; padding:5%; padding-top:7%;color:#dc8c86">Information and Data Services</h4>
     <div class="row">
       <div class="col-md-3 servcard">
@@ -194,10 +204,11 @@ Data Analysis/Science
       </div>
     </div>
     </div>
-
+  </div>
     <!--Services end-->
     <!--Partners start-->
-    <h2 class="title-headings " id="partners">Partners</h2><hr class="line-break">
+    <div id="partners">
+    <h2 class="title-headings " >Partners</h2><hr class="line-break">
     <div class="container">
       <div class="row mb-4">        
         <div class="col-md-4">
@@ -213,15 +224,19 @@ Data Analysis/Science
         </div>
       </div>
     </div>
+  </div>
     <!--Partners end-->
 
     <!--Resources start-->
-    <h2 class="title-headings" id="resources">Resources</h2><hr class="line-break">
+    <div id="resources">
+    <h2 class="title-headings" >Resources</h2><hr class="line-break">
     <div class="container bottom">
       <iframe class="airtable-embed" src="https://airtable.com/embed/shr0mvDs1Mun3xC47?backgroundColor=gray&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="700" style="background: transparent; border: 1px solid #ccc;"></iframe>
       <h3>Global Clusters</h3>
       <iframe class="airtable-embed" src="https://airtable.com/embed/shroZ7NOUCWunoUDu?backgroundColor=gray&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="700" style="background: transparent; border: 1px solid #ccc;"></iframe>
-    </div><!--Resources end-->
+    </div>
+  </div>
+    <!--Resources end-->
       
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -231,13 +246,50 @@ Data Analysis/Science
 
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
+  <!--Script to hide sub navigation  
   <script>
     document.getElementById("sub-navigation").style.visibility="hidden";
 
     document.getElementById("sub-nav-driver").onmouseover=(function(){
       document.getElementById("sub-navigation").style.visibility="visible";
     });
-  </script>
+  </script>-->
+<script type="text/javascript">
+$(document).ready(function () {
+  $(document).on("scroll", onScroll);
+  $('a[href^="#"]').on('click', function (e) {
+      e.preventDefault();
+        $(document).off("scroll");
+         $('a').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+         var target = this.hash,
+         menu = target;
+         $target = $(target);
+       $('html, body').stop().animate({
+            'scrollTop': $target.offset().top+2
+        }, 600, 'swing', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
+        });
+    });
+});
+
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('#sub-navigation a').each(function () {
+        var currLink = $(this);
+       var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('#sub-navigation ul li a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+    });
+}
+</script>
 </body>
 </html>
