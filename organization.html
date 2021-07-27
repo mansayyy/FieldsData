@@ -119,8 +119,83 @@
 <div id="our-team">
       <h2 class="title-headings">Our Team</h2><hr class="line-break">
   <div>
-      <div class="container-team">
-        <div class="item"><div class="hexagon hexagon-1" id="hexagon-1" onclick="hex_one()"><div class="hexagon-title">Anand </div></div></div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="team-card" onclick="hex_one()">
+            <img style="width:80%;margin-left:10%" src="images/Anand_2_adobespark.png">
+            <div class="team-card-footer">Anand Ramachandran</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="team-card" onclick="hex_two()">
+            <img style="width:80%;margin-left:10%" src="images/Andrea_Ruzo_adobespark.png">
+            <div class="team-card-footer">Andrea Ruzo</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="team-card" onclick="hex_three()">
+            <img style="width:80%;margin-left:10%" src="images/Arnau_Rov.png">
+            <div class="team-card-footer">Arnau Rovira</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="team-card" onclick="hex_four()">
+            <img style="width:80%;margin-left:10%" src="images/Athira_Lonappan_newteam.jpg">
+            <div class="team-card-footer">Athira Lonappan</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:3%;">
+        <div class="col-md-3">
+          <div class="team-card" onclick="hex_five()">
+            <img style="width:80%;margin-left:10%" src="images/Jose_newteam.jpg">
+            <div class="team-card-footer">Jose</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="team-card" onclick="hex_six()">
+            <img style="width:80%;margin-left:10%" src="images/Manasi_Anantpurkar_newteam.jpg">
+            <div class="team-card-footer">Manasi Anantpurkar</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="team-card" onclick="hex_seven()">
+            <img style="width:80%;margin-left:10%" src="images/Marc_Sanford_newteam.png">
+            <div class="team-card-footer">Marc Sanford</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="team-card" onclick="hex_eight()">
+            <img style="width:80%;margin-left:10%" src="images/Pablo_adobespark_newteam.png">
+            <div class="team-card-footer">Pablo</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:3%;">
+        <div class="col-md-3"></div>
+        <div class="col-md-3">
+          <div class="team-card" onclick="hex_nine()">
+            <img style="width:80%;margin-left:10%" src="images/Rushi_newteam.png">
+            <div class="team-card-footer">Rushikesh Deshmukh</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="team-card" onclick="hex_ten()">
+            <img style="width:80%;margin-left:10%" src="images/Velton_Dsouza_newteam.png">
+            <div class="team-card-footer">Velton D'souza</div>
+          </div>
+        </div>
+      </div>
+
+      
+
+    </div>
+      <!--<div class="container-team">
+        <div class="item"><div class="hexagon hexagon-1" id="hexagon-1" ><div class="hexagon-title">Anand </div></div></div>
         <div class="item"><div class="hexagon hexagon-2" onclick="hex_two()"><div class="hexagon-title">Arnau </div></div></div>
         <div class="item"><div class="hexagon hexagon-3" onclick="hex_three()"><div class="hexagon-title">Pablo </div></div></div>
         <div class="item"><div class="hexagon hexagon-4" onclick="hex_four()"><div class="hexagon-title">Jose </div></div></div>
@@ -130,7 +205,7 @@
         <div class="item"><div class="hexagon hexagon-8" onclick="hex_eight()"><div class="hexagon-title">Velton </div></div></div>
         <div class="item"><div class="hexagon hexagon-9" onclick="hex_nine()"><div class="hexagon-title">Rushikesh </div></div></div>
         <div class="item"><div class="hexagon hexagon-10" onclick="hex_ten()"><div class="hexagon-title">Manasi </div></div></div>
-      </div>
+      </div>-->
       <div id="biobox">
         <div class="careers" >
           <h1 id="person-name"></h1>
@@ -340,53 +415,53 @@
   }
   function hex_two(){
     x.style.visibility = 'visible';
-    x.innerHTML = "As a political scientist Arnau has specialised in knowledge and information management and right now he is based in Ramallah, Palestine supporting the Red Cross on health projects. He holds a BA in Political Science and a MA in Social Innovation for Sustainable Development. With a range of analytical and technical expertise, he bridges the gap between the data and the project needs. Before, he worked for Devex, a media platform for the development community  in analytical and operational roles and also for Scytl, an electronic voting company, providing business intelligence analysis. He has lived and worked in the Philippines and Burundi, and travelled in several countries for electoral observation missions. ";
-    document.getElementById("person-name").innerHTML="Arnau Rovira";
-    document.getElementById("person-title").innerHTML="Co founder";
-    biob.style.visibility="visible";
-  }
-  function hex_three(){
-    x.style.visibility = 'visible';
-    x.innerHTML = "After (Civil) Engineering studies and a year working as a consultant at PWC, Pablo decided to commit all his time and energy to work for a bigger purpose. This change drove him to work at a Microcredit Foundation, for two local NGOs, and for a Social Consulting organization (Tandem Social) in Barcelona. After some time, he went to live in Burundi and Tanzania for two years, where he worked for refugees in the Humanitarian context, focusing in Livelihoods and Education areas. After some reflection with good friends on the potential improvements of the Humanitarian sector, he decided to engage in this new adventure to continue contributing the best to the people in need.<br><br>Pablo currently lives in Rome, where he enjoys the richness of the city, the warmth of its people, and the lovely visits of friends and family.";
-    document.getElementById("person-name").innerHTML="Pablo Bernal";
-    document.getElementById("person-title").innerHTML="Co founder";
-    biob.style.visibility="visible";
-  }
-  function hex_four(){
-    x.style.visibility = 'visible';
-    x.innerHTML = "Jose has been involved in different humanitarian operations during the last 9 years in El Salvador, Senegal and Morocco. His experience has been developed with UNDP, OXFAM and the Red Cross-Red Crescent International Movement, as program manager and head of office Graduated in law and business administration at University of Navarra, Spain, he has gradually specialized (master degree) in two areas of special interest, international cooperation and public policy. Jose lived in Burundi for 3 years before moving to Iraq. After spending 9 months in Baghdad, he has recently moved back to Madrid. Jose, a passionate individual, likes to develop any type of activity at the local level with excluded people(prisons, poor neighbourhoods) ";
-    document.getElementById("person-name").innerHTML="Jose ";
-    document.getElementById("person-title").innerHTML="Co founder";
-    biob.style.visibility="visible";
-  }
-  function hex_five(){
-    x.style.visibility = 'visible';
     x.innerHTML = "Over the past +10 years Andrea has been working in Project Management and Business Development in Asia, Latin America, Europe and the EMEA region collaborating with public governments, private actors and impact investing funds. She holds a Masters in International Business at ESCI - UPF and has specialized in International Development and Humanitarian Aid at University of London. Selected as one of the 50 most promising emerging women leaders by Santander, Andrea has worked on supporting, designing and implementing projects in rural development, health, women empowerment and social entrepreneurship in organizations like Devex, LGT Impact Ventures and SCP/RAC UNEP MAP.<br><br>Andrea was born in the green region of Galicia, where she travels as often as she can to enjoy nature and family there. Being a travel addict, she has found some time to learn 6 languages, and is currently trying to learn Arabic. She can have long intellectual conversations with babies and kids, and she is almost always ready to grab a drink or shake a leg with the oldies.";
     document.getElementById("person-name").innerHTML="Andrea Ruzo";
     document.getElementById("person-title").innerHTML="Co founder";
     biob.style.visibility="visible";
   }
-  function hex_six(){
+  function hex_three(){
     x.style.visibility = 'visible';
-    x.innerHTML = "Shortly after completing his undergraduate degree at West Virginia University, Marc discovered that he really enjoyed working with data and crunching numbers. Having majored in political science, he was looking for an opportunity that could help him segue into a career in data analytics that was also relevant to his field of study. Marc was immediately intrigued by how Fields Data was applying data science and analytics in the fields of international development and humanitarian assistance, and began working as an intern with the company in March of 2021.  Currently, Marc is pursuing his Master of International Affairs degree, taking courses in statistics, international economics, and IT management.  When he is not working, Marc enjoys doing creative things (such as playing the guitar), cooking, training Jiu Jitsu and other martial arts, and taking his dog Sadie for walks. ";
-    document.getElementById("person-name").innerHTML="Marc Sanford";
-    document.getElementById("person-title").innerHTML="Intern";
+    x.innerHTML = "As a political scientist Arnau has specialised in knowledge and information management and right now he is based in Ramallah, Palestine supporting the Red Cross on health projects. He holds a BA in Political Science and a MA in Social Innovation for Sustainable Development. With a range of analytical and technical expertise, he bridges the gap between the data and the project needs. Before, he worked for Devex, a media platform for the development community  in analytical and operational roles and also for Scytl, an electronic voting company, providing business intelligence analysis. He has lived and worked in the Philippines and Burundi, and travelled in several countries for electoral observation missions. ";
+    document.getElementById("person-name").innerHTML="Arnau Rovira";
+    document.getElementById("person-title").innerHTML="Co founder";
     biob.style.visibility="visible";
   }
-  function hex_seven(){
+  function hex_four(){
     x.style.visibility = 'visible';
     x.innerHTML = "She is currently pursuing her Bachelor in Computer Engineering from Don Bosco Institute of Technology, Mumbai University. Being a curious learner about machine learning , statistics and visualisations , she was looking for an opportunity to implement her skills and that's how Fields Data happened. She has developed a keen interest in this sphere by working on real-world projects and has loved meeting passionate human beings on this journey.Athira has always tried to take out time for her love affair with sports. She has represented her college at football events and when the pandemic hit, she got her hands on rugby. Guess it is just a matter of time before she takes up a new sport. Cool as a cucumber, Athira has her own way of relieving stress - 'dance it out' as she calls it and when everything else fails, power nap is her rescue.";
     document.getElementById("person-name").innerHTML="Athira Lonappan";
     document.getElementById("person-title").innerHTML="Intern";
     biob.style.visibility="visible";
   }
-  function hex_eight(){
+  function hex_five(){
     x.style.visibility = 'visible';
-    x.innerHTML = "Velton D’Souza is a coding enthusiast. Whilst, pursuing his Bachelors in Electronic and Telecommunication Engineering, he got a crush on Machine Learning. And ever since then he is madly in love with her. He built a model to classify the iris flower using Machine Learning (trying to impress her). Before you start playing scenes of the movie HER in your mind, he also loves sports. To bring his two passions together, Velton and his friends built a robot for catching and throwing a rugby ball, and they managed to clear the first round of ABU Robocon but sadly, the pandemic took away the dream of participating at the national level.<br> Velton's fun and friendly attitude is partly because he is from Goa- the Paradise of South Asia and as he says 'Life's better at a beach! '. He loves to play volleyball and video games, and is a big-time football fan, who has spent a significant part of his life watching videos of Ronaldinho creating magic on the field.";
-    document.getElementById("person-name").innerHTML="Velton D'souza";
+    x.innerHTML = "Jose has been involved in different humanitarian operations during the last 9 years in El Salvador, Senegal and Morocco. His experience has been developed with UNDP, OXFAM and the Red Cross-Red Crescent International Movement, as program manager and head of office Graduated in law and business administration at University of Navarra, Spain, he has gradually specialized (master degree) in two areas of special interest, international cooperation and public policy. Jose lived in Burundi for 3 years before moving to Iraq. After spending 9 months in Baghdad, he has recently moved back to Madrid. Jose, a passionate individual, likes to develop any type of activity at the local level with excluded people(prisons, poor neighbourhoods) ";
+    document.getElementById("person-name").innerHTML="Jose ";
+    document.getElementById("person-title").innerHTML="Co founder";
+    biob.style.visibility="visible";
+  }
+  function hex_six(){
+    x.style.visibility = 'visible';
+    x.innerHTML = "Manasi is currently pursuing her Bachelor's degree in Computer Engineering from Don Bosco Institute of Technology, Mumbai. She has been combining analytical technical work with creative designs, to come up with stylish web pages. Along with web development, she is also interested in coding in C and Python. She is your go-to person when you need to get some work done - be it writing some code or being a wingwoman.<br>Along with websites, she has a special interest in Mathematics. (Psst psst.. she gets paid to solve math problems.) Although all the above statements make her look like a nerd, she's not. She can sing, play keyboard and laugh at the drop of a hat. This outgoing extrovert can strike a conversation with anyone, however she cherishes every minute of her day spent at home in Thane with her beloved family.";
+    document.getElementById("person-name").innerHTML="Manasi Anantpurkar";
     document.getElementById("person-title").innerHTML="Intern";
     biob.style.visibility="visible";
   }
+  function hex_seven(){
+    x.style.visibility = 'visible';
+    x.innerHTML = "Shortly after completing his undergraduate degree at West Virginia University, Marc discovered that he really enjoyed working with data and crunching numbers. Having majored in political science, he was looking for an opportunity that could help him segue into a career in data analytics that was also relevant to his field of study. Marc was immediately intrigued by how Fields Data was applying data science and analytics in the fields of international development and humanitarian assistance, and began working as an intern with the company in March of 2021.  Currently, Marc is pursuing his Master of International Affairs degree, taking courses in statistics, international economics, and IT management.  When he is not working, Marc enjoys doing creative things (such as playing the guitar), cooking, training Jiu Jitsu and other martial arts, and taking his dog Sadie for walks. ";
+    document.getElementById("person-name").innerHTML="Marc Sanford";
+    document.getElementById("person-title").innerHTML="Intern";
+    biob.style.visibility="visible";
+  }
+  function hex_eight(){
+    x.style.visibility = 'visible';
+    x.innerHTML = "After (Civil) Engineering studies and a year working as a consultant at PWC, Pablo decided to commit all his time and energy to work for a bigger purpose. This change drove him to work at a Microcredit Foundation, for two local NGOs, and for a Social Consulting organization (Tandem Social) in Barcelona. After some time, he went to live in Burundi and Tanzania for two years, where he worked for refugees in the Humanitarian context, focusing in Livelihoods and Education areas. After some reflection with good friends on the potential improvements of the Humanitarian sector, he decided to engage in this new adventure to continue contributing the best to the people in need.<br><br>Pablo currently lives in Rome, where he enjoys the richness of the city, the warmth of its people, and the lovely visits of friends and family.";
+    document.getElementById("person-name").innerHTML="Pablo Bernal";
+    document.getElementById("person-title").innerHTML="Co founder";
+    biob.style.visibility="visible";
+  }      
   function hex_nine(){
     x.style.visibility = 'visible';
     x.innerHTML = "Rushikesh is currently studying in third year mechanical engineering at Don Bosco Institute of Technology, Mumbai. He is a tech savvy person, always curious about the latest technologies. He became a rookie web developer during the lockdown and then got deeply interested in data science and machine learning. He is constantly trying to expand his knowledge with the help of online courses and projects.<br> Apart from this, Rushikesh is a swimmer. He enjoys playing cricket, badminton, table tennis and football. He loves trekking, exploring new places, road trips with friends.Last but not the least, he's a budding entrepreneur who wants to build his own private equity firm .";
@@ -394,14 +469,15 @@
     document.getElementById("person-title").innerHTML="Intern";
     biob.style.visibility="visible";
   }
-
   function hex_ten(){
     x.style.visibility = 'visible';
-    x.innerHTML = "Manasi is currently pursuing her Bachelor's degree in Computer Engineering from Don Bosco Institute of Technology, Mumbai. She has been combining analytical technical work with creative designs, to come up with stylish web pages. Along with web development, she is also interested in coding in C and Python. She is your go-to person when you need to get some work done - be it writing some code or being a wingwoman.<br>Along with websites, she has a special interest in Mathematics. (Psst psst.. she gets paid to solve math problems.) Although all the above statements make her look like a nerd, she's not. She can sing, play keyboard and laugh at the drop of a hat. This outgoing extrovert can strike a conversation with anyone, however she cherishes every minute of her day spent at home in Thane with her beloved family.";
-    document.getElementById("person-name").innerHTML="Manasi Anantpurkar";
+    x.innerHTML = "Velton D’Souza is a coding enthusiast. Whilst, pursuing his Bachelors in Electronic and Telecommunication Engineering, he got a crush on Machine Learning. And ever since then he is madly in love with her. He built a model to classify the iris flower using Machine Learning (trying to impress her). Before you start playing scenes of the movie HER in your mind, he also loves sports. To bring his two passions together, Velton and his friends built a robot for catching and throwing a rugby ball, and they managed to clear the first round of ABU Robocon but sadly, the pandemic took away the dream of participating at the national level.<br> Velton's fun and friendly attitude is partly because he is from Goa- the Paradise of South Asia and as he says 'Life's better at a beach! '. He loves to play volleyball and video games, and is a big-time football fan, who has spent a significant part of his life watching videos of Ronaldinho creating magic on the field.";
+    document.getElementById("person-name").innerHTML="Velton D'souza";
     document.getElementById("person-title").innerHTML="Intern";
     biob.style.visibility="visible";
   }
+
+  
 
   y=document.getElementById("about-the-person2");
   biob2=document.getElementById("biobox2");

@@ -243,7 +243,13 @@ body{
     margin:5%;
     width:100%;
 }
-
+.team-card-footer{
+    background-color: white;
+    color: #488a97;
+    font-size: 22px;
+    text-align: center;
+    justify-content: center;
+}
 .teampicone{
     border: 5px #488a97 solid;
     width: 200px;
@@ -353,7 +359,7 @@ body{
     color: #dc8c86;
     font-size: 36px;
     padding-top:4%;
-    font-weight: 200;
+    font-weight: 600;
     text-transform: uppercase;
 }
 
@@ -399,9 +405,18 @@ body{
 /*Quote*/
 
 .intro{
-    background-image: url(images/map_edited.png);
-  background-size: cover;
-    color: white;
+    background-image: url(images/map.jpeg);
+    color:white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98%;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: cover;
+    z-index: 1;
+    opacity: 7;
 }
 
 .actual-intro{
@@ -415,16 +430,20 @@ body{
     background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
+  opacity:50;
     height: 250px;
     color: white;
 }
-
+ .quote h5{
+     opacity:1;
+ }
 .actual-quote{
     padding-top: 80px;
     font-weight: bold;
     width: 80%;
     padding-left: 15%;
     text-align: center;
+    opacity:1;
     }
 /*Impact Start*/
 .impact-number{
