@@ -841,3 +841,14 @@ body{
 }
 
 
+button#increasetext {
+	font-size: 26px;
+}
+
+button#resettext {
+	font-size: 20px;
+}
+
+button#decreasetext {
+	font-size: 14px;
+}

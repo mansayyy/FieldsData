@@ -91,6 +91,20 @@
       </div>
     </nav>
 
+    <div style="text-align:right;padding-right:10%">
+      <h4 class="careers">Adjust your font-size</h4>
+      <div class="textcontrols">
+        <button class="btn btn-primary submit-mob" role="button" id="decreasetext">
+          <span>smaller</span>
+        </button>
+        <button class="btn btn-primary submit-mob" role="button" id="resettext">
+          <span>normal</span>
+        </button>
+        <button class="btn btn-primary submit-mob" role="button" id="increasetext">
+          <span>bigger</span>
+        </button>
+      </div>  
+    </div>
     <!--Current start-->
     <div id="current">
     <h2 class="title-headings">CURRENT</h2><hr class="line-break">
@@ -373,6 +387,33 @@
             }
         });
     }
+    </script>
+
+    <script>
+      $('#increasetext').click(function() {
+        curSize = parseInt($('.title-headings').css('font-size')) + 6;
+        $('.title-headings').css('font-size', curSize);
+        $('.careers').css('font-size', 26);
+        $('.testimonial-text').css('font-size', 26);
+        $('.testimonial-name').css('font-size', 24);
+      });
+    
+      $('#resettext').click(function() {
+        $('.careers').css('font-size', 20);
+        $('.testimonial-text').css('font-size', 20);
+        $('.testimonial-name').css('font-size', 18);
+        if (curSize != 36)
+          $('.title-headings').css('font-size', 36);
+        
+      });
+    
+      $('#decreasetext').click(function() {
+        curSize = parseInt($('.title-headings').css('font-size')) - 6;
+        $('.title-headings').css('font-size', curSize);      
+        $('.careers').css('font-size', 14);
+        $('.testimonial-text').css('font-size', 16);
+        $('.testimonial-name').css('font-size', 14);
+      });
     </script>
   </body>
 </html>
