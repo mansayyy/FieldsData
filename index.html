@@ -56,6 +56,22 @@
               </div>
               
             </div>
+            <div class="dropup">
+              
+              <img style="width:100px" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="images/noun_Accessibility_1872.png"> 
+              <div class="dropdown-menu textcontrols">
+              
+                <button class="btn btn-primary submit-mob dropdown-item mb-2" role="button" id="resettext">
+                  <span><i class="bi bi-textarea-t"></i>Normal font</span>
+                </button>
+                <button class="btn btn-primary submit-mob dropdown-item mb-2" role="button" id="increasetext">
+                  <span><i class="bi bi-textarea-t"></i>Bigger font</span>
+                </button>
+                <button class="btn btn-primary submit-mob dropdown-item mb-2" onclick="sayItOutLoud()">
+                  <span><i class="bi bi-megaphone"></i>Read it loud</span>
+                </button>
+              </div>
+            </div>
           </div>
           
           
@@ -132,20 +148,7 @@
       </div>
       <!--Partners end-->
 
-      <div style="margin-bottom:10%;text-align:center">
-        <h4 class="careers">Adjust your font-size</h4>
-        <div class="textcontrols">
-          <button class="btn btn-primary submit-mob" role="button" id="decreasetext">
-            <span>smaller</span>
-          </button>
-          <button class="btn btn-primary submit-mob" role="button" id="resettext">
-            <span>normal</span>
-          </button>
-          <button class="btn btn-primary submit-mob" role="button" id="increasetext">
-            <span>bigger</span>
-          </button>
-        </div>  
-      </div>
+      
     
 
       <!-- jQuery library -->
@@ -204,6 +207,20 @@ video.addEventListener("canplay", function() {
       $('.title-headings').css('font-size', curSize);      
       $('.careers').css('font-size', 14);
     });
+  </script>
+  <script>
+    function sayItOutLoud() {
+      var body = document.body;
+      const message = body.innerText;
+      //const message = document.getElementById('sayourstory').textContent;
+      var speech = new SpeechSynthesisUtterance();
+      speech.lang = "en-US";
+      speech.text = message;
+      speech.volume = 1;
+      speech.rate = 1;
+      speech.pitch = 1;    
+      window.speechSynthesis.speak(speech);
+    }
   </script>
 </body>
 </html>
