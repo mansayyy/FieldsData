@@ -107,8 +107,8 @@
 
     <h2 class="title-headings" id="resources">Approach</h2><hr class="line-break" style="margin-bottom: 0;padding-bottom:0;">
     <div class="container">
-        <video width="100%" autoplay loop>
-          <source src="Methodology.mov" type="video/mp4">
+        <video id="video_approach" width="100%" autoplay>
+          <source src="Methodology.mov"  type="video/mp4">
         Your browser does not support the video tag.
         </video>
     </div>
@@ -118,11 +118,11 @@
       <div class="container" style="text-align:center">
         <div class="row mb-4">        
           <div class="col-md-4">
-            <h3 class="careers">BURUNDI</h3>
+            <h3 class="careers" style="font-size:24px">BURUNDI</h3>
             <img class="riseforafr" src="images/Rise for Africa-Burundi.png" />
           </div>
           <div class="col-md-4">
-            <h3 class="careers" style="margin-left:100%">UGANDA</h3>
+            <h3 class="careers" style="margin-left:100%;font-size:24px">UGANDA</h3>
             <img href="https://www.rapehurts.org/" src="images/Rape Hurts Foundation - Uganda.png" />
           </div>
           <div class="col-md-4 ">
@@ -169,6 +169,15 @@
   </script>
   <script>
     var video = document.getElementById("video_background");
+video.addEventListener("canplay", function() {
+  setTimeout(function() {
+    video.play();
+  }, 30000);
+});
+  </script>
+
+  <script>
+    var video = document.getElementById("video_approach");
 video.addEventListener("canplay", function() {
   setTimeout(function() {
     video.play();

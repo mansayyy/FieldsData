@@ -60,7 +60,24 @@
               </div>
               
             </div>
+            <div class="dropup">
+              
+              <img style="width:100px" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="images/noun_Accessibility_1872.png"> 
+              <div class="dropdown-menu textcontrols">
+              
+                <button class="btn btn-primary submit-mob dropdown-item mb-2" role="button" id="resettext">
+                  <span><i class="bi bi-textarea-t"></i>Normal font</span>
+                </button>
+                <button class="btn btn-primary submit-mob dropdown-item mb-2" role="button" id="increasetext">
+                  <span><i class="bi bi-textarea-t"></i>Bigger font</span>
+                </button>
+                <button class="btn btn-primary submit-mob dropdown-item mb-2" onclick="sayItOutLoud()">
+                  <span><i class="bi bi-megaphone"></i>Read it loud</span>
+                </button>
+              </div>
+            </div>
           </div>
+          
           
           
         </div>
@@ -95,38 +112,24 @@
             <a class="nav-link" href="contact.html">CONTACT</a>
           </li>
         </ul>
+
+        
       </div>
+
+      
     </nav>
 
-    <div style="text-align:right;padding-right:10%">
-      <h4 class="careers">Adjust your font-size</h4>
-      <div class="textcontrols">
-        <button class="btn btn-primary submit-mob" role="button" id="decreasetext">
-          <span>smaller</span>
-        </button>
-        <button class="btn btn-primary submit-mob" role="button" id="resettext">
-          <span>normal</span>
-        </button>
-        <button class="btn btn-primary submit-mob" role="button" id="increasetext">
-          <span>bigger</span>
-        </button>
-      </div>  
+    <div class="top-strip">
+      <img style="height:120%" src="images/logoFD_negative_transparent.png">
     </div>
-
     <!--Methodology STart-->
     <div id="methodology">
     <h2 class="title-headings" >Methodology</h2><hr class="line-break" style="margin-bottom:0;padding-bottom:0">
     <div class=" d-flex justify-content-center">
-      <video width="80%" autoplay loop>
+      <video width="80%" autoplay>
         <source src="Methodology.mov" type="video/mp4">
       Your browser does not support the video tag.
       </video>
-    </div>
-    <div class="container">
-      <div class="careers">
-        We use a bottom-up approach to collect and aggregate information from different actors through a combination of methods:<br><br>a) <span style="font-weight:bold">Field Experts</span> - data collection with the help of on-field consultants
-        <br>b)<span style="font-weight:bold">Public source</span>- data extraction from platforms like IATI, HDX etc.<br>c) <span style="font-weight:bold">Organisations</span>  - sourcing information directly from organisations
-      </div>
     </div>
   </div>
 
@@ -227,11 +230,11 @@ Data Analysis/Science
     <div class="container" style="text-align:center">
       <div class="row mb-4">        
         <div class="col-md-4">
-          <h3 class="careers">BURUNDI</h3>
+          <h3 class="careers" style="font-size:24px">BURUNDI</h3>
           <img class="riseforafr" src="images/Rise for Africa-Burundi.png" />
         </div>
         <div class="col-md-4">
-          <h3 class="careers" style="margin-left:100%">UGANDA</h3>
+          <h3 class="careers" style="margin-left:100%;font-size:24px">UGANDA</h3>
           <img href="https://www.rapehurts.org/" src="images/Rape Hurts Foundation - Uganda.png" />
         </div>
         <div class="col-md-4 ">
@@ -325,6 +328,20 @@ function onScroll(event){
     $('.title-headings').css('font-size', curSize);      
     $('.careers').css('font-size', 14);
   });
+</script>
+<script>
+  function sayItOutLoud() {
+    var body = document.body;
+    const message = body.innerText;
+    //const message = document.getElementById('sayourstory').textContent;
+    var speech = new SpeechSynthesisUtterance();
+    speech.lang = "en-US";
+    speech.text = message;
+    speech.volume = 1;
+    speech.rate = 1;
+    speech.pitch = 1;    
+    window.speechSynthesis.speak(speech);
+  }
 </script>
 </body>
 </html>

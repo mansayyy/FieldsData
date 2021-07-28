@@ -118,6 +118,10 @@
     </button>
   </div>  
 </div>
+
+<div class="top-strip">
+  <img style="height:120%" src="images/logoFD_negative_transparent.png">
+</div>
 <!--Our Story Start-->
 <div id="about">
 <h2 class="title-headings"  > Our Story <i onclick="sayItOutLoud()" class="bi bi-megaphone" data-toggle="tooltip" data-placement="right" title="Read it loud"></i></i> </h2> <hr class="line-break">
@@ -589,7 +593,9 @@
 
   <script>
     function sayItOutLoud() {
-      const message = document.getElementById('sayourstory').textContent;
+      var body = document.body;
+      const message = body.textContent || body.innerText;
+      //const message = document.getElementById('sayourstory').textContent;
       var speech = new SpeechSynthesisUtterance();
       speech.lang = "en-US";
       speech.text = message;
