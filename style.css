@@ -850,3 +850,12 @@ button#increasetext {
     height:10vh;
     text-align: center;
 }
+
+label{
+    font-size: 20px;
+    color: #488a97;
+}
+
+.multiselect-container>li>a>label{
+    width: 700px;
+}
