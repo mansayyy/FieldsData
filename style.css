@@ -205,6 +205,11 @@ body{
     color: #dc8c86;
     align-self: center;
 }
+.service-icon2{
+    font-size: 100px;
+    color: #488a97;
+    align-self: center;
+}
 .service-icon-arrow{
     font-size: 70px;
     color: #488a97;
@@ -872,10 +877,6 @@ label{
 .multiselect-selected-text{
     color: #488a97;
 }
-.carousel {
-	
-}
-
 #myCarousel{
     padding: 5%;
 }
