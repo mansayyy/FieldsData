@@ -205,11 +205,12 @@ body{
     color: #dc8c86;
     align-self: center;
 }
-.service-icon2{
-    font-size: 100px;
+.service-icon-arrow{
+    font-size: 70px;
     color: #488a97;
-    align-self: center;
 }
+
+
 .card-serv{
     margin-bottom: 5%;
     height: 100%;
