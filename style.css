@@ -869,6 +869,9 @@ label{
     width: 700px;
 }
 
+.multiselect-selected-text{
+    color: #488a97;
+}
 .carousel {
 	
 }
