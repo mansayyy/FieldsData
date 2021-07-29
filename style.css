@@ -404,24 +404,33 @@ body{
 /*Careers End*/
 /*Quote*/
 
+
+
 .intro{
-    background-image: url(images/map.jpeg);
+    background-image:url(images/map.jpeg);
     color:white;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 98%;
+    height: 70vh;
     background-repeat: no-repeat;
     background-position: 0%;
     background-size: cover;
-    z-index: 1;
+    z-index: -1;
     opacity: 7;
+    clip-path: polygon(
+    0 0, /* left top */
+    100% 0, /* right top */ 
+    100% 80%, /* right bottom */
+    0 90% /* left bottom */
+  );
 }
 
 .actual-intro{
     padding-top: 60px;
     padding-left: 5%;
+    font-weight: bold;
 }
 
 .quote{
@@ -443,7 +452,6 @@ body{
     width: 80%;
     padding-left: 15%;
     text-align: center;
-    opacity:1;
     }
 /*Impact Start*/
 .impact-number{
@@ -847,7 +855,7 @@ button#increasetext {
 
 .top-strip{
     background-image: url(images/background_grad_banner.png);
-    height:10vh;
+    height:fit-content;
     text-align: center;
 }
 
