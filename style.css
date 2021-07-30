@@ -28,6 +28,11 @@ body{
     
 
 /*Navbar*/
+.navbar-mobile{
+    display: none;
+    visibility: hidden;
+}
+
 .navbar-brand img{
     margin-top: 15%;
     width: 150px;
@@ -53,6 +58,62 @@ body{
 .nav{
     padding-top: 1%;
 }
+.carousel .carousel-item {
+	color: #999;
+	font-size: 14px;
+	text-align: center;
+	overflow: hidden;
+    height: 30vh;
+    color: #dc8c86;
+}
+
+.pt{
+    width: auto;
+}
+#myCarousel{
+    padding: 10%;
+}
+
+.carousel .testimonial {
+    vertical-align: middle;
+    color: #DFF8EB;
+}
+.carousel .overview {	
+	font-style: italic;
+}
+.carousel .overview b {
+	text-transform: uppercase;
+	color: #dc8c86;
+}
+.carousel-control-prev, .carousel-control-next {
+	width: auto;
+	background: none;
+    
+}
+.carousel-control-prev i, .carousel-control-next i {
+	font-size: 56px;
+	display: inline-block;
+	color: white;
+}
+.carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	border: none;
+}
+.carousel-indicators li {	
+	background: #999;
+	border-color: transparent;
+	box-shadow: inset 0 2px 1px #488a97;
+}
+.carousel-indicators li.active {	
+	background: #488a97;		
+	box-shadow: inset 0 2px 1px #488a97;
+}
+
 
 .container-fluid{
     padding: 0;
@@ -249,6 +310,45 @@ body{
     margin:5%;
     width:100%;
 }
+
+.hexagon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    -o-transform: skewY(-30deg) rotate(60deg);
+    -moz-transform: skewY(-30deg) rotate(60deg);
+    -webkit-transform: skewY(-30deg) rotate(60deg);
+    -ms-transform: skewY(-30deg) rotate(60deg);
+    transform: skewY(-30deg) rotate(60deg);
+    overflow: hidden;
+  
+}
+.hexagon-title{
+    color: white;
+    text-align: center;
+    margin-top: 75%;
+    font-weight: 900;
+    font-size: 28px;
+}
+.hexagon-11{
+    background-image: url(images/board_member1.JPG);
+    background-size: cover;
+  }
+  .hexagon-12{
+    background-image: url(images/board_member2.JPG);
+    background-size: cover;
+  }
+  .hexagon-13{
+    background-image: url(images/board_member3.JPG);
+    background-size: cover;
+  }
+  .hexagon-14{
+    background-image: url(images/board_member4.JPG);
+    background-size: cover;
+  } 
 .team-card-footer{
     background-color: white;
     color: #488a97;
@@ -296,6 +396,9 @@ body{
 }
 
 /*FAQ*/
+.ask-a-ques-text{
+    text-align: right;
+}
 .ques-card{
     width: 80%;
     margin-left: 10%;
@@ -459,6 +562,9 @@ body{
     padding-left: 15%;
     text-align: center;
     }
+.actual-quote-speaker{
+    margin-left: 20%;
+}
 /*Impact Start*/
 .impact-number{
     font-size: 65px;
@@ -584,141 +690,17 @@ body{
   }
   #about-the-person{
     text-align: center;
-  }
-  .hexagon{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      
-      -o-transform: skewY(-30deg) rotate(60deg);
-      -moz-transform: skewY(-30deg) rotate(60deg);
-      -webkit-transform: skewY(-30deg) rotate(60deg);
-      -ms-transform: skewY(-30deg) rotate(60deg);
-      transform: skewY(-30deg) rotate(60deg);
-      overflow: hidden;
-    
-  }
-
-  .hexagon:hover{
-  }
-  .hexagon-title{
-      color: white;
-      text-align: center;
-      margin-top: 75%;
-      font-weight: 900;
-      font-size: 28px;
-  }
-  .hexagon-1{
-    background-image: url(images/Anand_Edited.jpg);
-    background-size: cover;
-  }
-
-  .hexagon-2{
-    background-image: url(images/Arnau_Edited.jpg);
-    background-size: cover;
-  }
-  .hexagon-3{
-    background-image: url(images/Pablo_edited.png);
-    background-size: cover;
-  }
-  .hexagon-4{
-    background-image: url(images/Jose.jpg);
-    background-size: cover;
-  }
-  .hexagon-5{
-    background-image: url(images/Andrea_Ruzo.jpeg);
-    background-size: cover;
-  }
-  .hexagon-6{
-    background-image: url(images/Marc_Edited.png);
-    background-size: cover;
-  }
-  .hexagon-7{
-    background-image: url(images/Athira_Edited.jpg);
-    background-size: cover;
-  }
-  .hexagon-8{
-    background-image: url(images/Velton_Dsouza.png);
-    background-size: cover;
-  }
-  .hexagon-9{
-    background-image: url(images/);
-    background-size: cover;
-  }
-  .hexagon-10{
-    background-image: url(images/Manasi_Anantpurkar.jpg);
-    background-size: cover;
-  }
-  .hexagon-11{
-    background-image: url(images/board_member1.JPG);
-    background-size: cover;
-  }
-  .hexagon-12{
-    background-image: url(images/board_member2.JPG);
-    background-size: cover;
-  }
-  .hexagon-13{
-    background-image: url(images/board_member3.JPG);
-    background-size: cover;
-  }
-  .hexagon-14{
-    background-image: url(images/board_member4.JPG);
-    background-size: cover;
-  } 
-    
-    
-      
-  .item *{
-      visibility: visible
-  }
+  }  
   
-  
-  @media(max-width: 1100px){
-    .container{
-      grid-template-columns: repeat(12, 80px);
-      width: 1000px
-    }    
-  .item:nth-child(11n+1){ grid-column-start: 1;}
-  .item:nth-child(11n+2){ grid-column-start: 3;}
-  .item:nth-child(11n+3){ grid-column-start: 5;}
-  .item:nth-child(11n+4){ grid-column-start: 7;}
-  .item:nth-child(11n+5){ grid-column-start: 9;}
-  .item:nth-child(11n+6){ grid-column-start: 11;}
-  .item:nth-child(11n+7){ grid-column-start: 2;}
-  .item:nth-child(11n+8){ grid-column-start: 4;}
-  .item:nth-child(11n+9){ grid-column-start: 6;}
-  .item:nth-child(11n+10){ grid-column-start: 8;}
-  .item:nth-child(11n){ grid-column-start: 10;}
-  }
+  @media(max-width: 1100px){}
   @media(min-width: 850px){
       .navbar-mobile{
           display: none;
       }
   } 
-  @media(max-width: 850px){
-
-    .container{
-      grid-template-columns: repeat(6, 100px);
-      width: 620px
-    }
-  .item:nth-child(5n+1){ grid-column-start: 1;}
-  .item:nth-child(5n+2){ grid-column-start: 3;}
-  .item:nth-child(5n+3){ grid-column-start: 5;}
-  .item:nth-child(5n+4){ grid-column-start: 2;}
-  .item:nth-child(5n){ grid-column-start: 4;}
-  }
+  @media(max-width: 850px){  }
   
-  @media(max-width: 720px){
-    .container{
-    grid-template-columns: repeat(4, 100px);
-      width: 410px;
-    }
-    .item:nth-child(3n+1){ grid-column-start: 1;}
-    .item:nth-child(3n+2){ grid-column-start: 3;}
-    .item:nth-child(3n){ grid-column-start: 2;}
-  }
+  @media(max-width: 720px){  }
 
 .award-card{
     width: 60%;
@@ -749,16 +731,10 @@ body{
     margin-top: 5%;
 }
 
-
-.partner-carousel{
-    width: 30%;
-    margin-left: 35%;
+.uganda-partner-title{
+    margin-left:100%;
+    font-size:24px
 }
-.partner-carousel2{
-    width: 30%;
-    margin-left: 28%;
-}
-
 .card-body{
     font-family:  'Source Sans Pro', sans-serif;
     font-size: 20px;
@@ -766,30 +742,23 @@ body{
     text-align: center;
 }
 
-.navbar-mobile{
-    display: none;
-    visibility: hidden;
-}
+
 /*Responsive */
 @media screen and (max-width: 600px)
 {
-
+    body{
+        max-width: 100%;
+    }
     .careers{
         font-size: 16px;
     }
     .servcard{
         width: 50%;
         margin-bottom: 10%;
-    }
-
-    .item:nth-child(n){ grid-column-start: 1;}
-    .hexagon{
-        position: absolute;
-    }    
+    }  
     .navbars{
         visibility:hidden;
     }
-
     .navbar-mobile{
         visibility: visible;
         background-color: white;
@@ -799,10 +768,31 @@ body{
         z-index: 1;
         display: block;
     }
+    .uganda-partner-title{
+        margin-left: 0;
+    }
+    .statista-logo{
+        max-width:100%;
+    }
+    .rapehurts-logo{
+        margin-right:35%;
+    }
     .nav-mob-active{
         border: 1px solid #488a97;
     }
-
+    .actual-quote{
+        padding-left: auto;
+        padding-top:5%;
+    }
+    .actual-quote-speaker{
+        margin-left: auto;
+    }
+    .actual-intro{
+        font-size: 20px;
+    }
+    .ask-a-ques-text{
+        text-align: center;
+    }
     .dropdown-item{
         color: #488a97;
         font-size: 16px;
@@ -823,9 +813,6 @@ body{
     .navbar-brand img{
         margin-top: 5%;
         width: 100px;
-    }
-    .riseforafr{
-       margin-left: 20%;
     }
     .board-for-lap{
         margin-left: 0;
@@ -852,6 +839,12 @@ body{
     .abc{
         width: 60%;
     }
+    .carousel .carousel-item {
+        height: max-content;
+    }
+    .carousel-control-prev i, .carousel-control-next i {
+        font-size: 30px;
+    }
 }
 
 
@@ -876,53 +869,4 @@ label{
 
 .multiselect-selected-text{
     color: #488a97;
-}
-#myCarousel{
-    padding: 5%;
-}
-.carousel .carousel-item {
-	color: #999;
-	font-size: 14px;
-	text-align: center;
-	overflow: hidden;
-    height: 30vh;
-}
-.carousel .testimonial {
-    vertical-align: middle;
-    color: #DFF8EB;
-}
-.carousel .overview {	
-	font-style: italic;
-}
-.carousel .overview b {
-	text-transform: uppercase;
-	color: #dc8c86;
-}
-.carousel-control-prev, .carousel-control-next {
-	width: auto;
-	background: none;
-    
-}
-.carousel-control-prev i, .carousel-control-next i {
-	font-size: 62px;
-	display: inline-block;
-	color: white;
-}
-.carousel-indicators {
-	bottom: -40px;
-}
-.carousel-indicators li, .carousel-indicators li.active {
-	width: 12px;
-	height: 12px;
-	border-radius: 50%;
-	border: none;
-}
-.carousel-indicators li {	
-	background: #999;
-	border-color: transparent;
-	box-shadow: inset 0 2px 1px #488a97;
-}
-.carousel-indicators li.active {	
-	background: #488a97;		
-	box-shadow: inset 0 2px 1px #488a97;
 }
