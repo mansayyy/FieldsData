@@ -272,7 +272,7 @@ body{
     align-self: center;
 }
 .service-icon-arrow{
-    font-size: 70px;
+    font-size: 62px;
     color: #488a97;
 }
 
@@ -744,18 +744,16 @@ body{
 
 
 /*Responsive */
-@media screen and (max-width: 600px)
+@media screen and (max-width: 768px)
 {
     body{
         max-width: 100%;
     }
-    .careers{
-        font-size: 16px;
+    .service-icon-arrow{
+        visibility: hidden;
+        display: none;
     }
-    .servcard{
-        width: 50%;
-        margin-bottom: 10%;
-    }  
+      
     .navbars{
         visibility:hidden;
     }
@@ -767,6 +765,13 @@ body{
         position: fixed;
         z-index: 1;
         display: block;
+    }
+    .careers{
+        font-size: 16px;
+    }
+    .servcard{
+        width: 50%;
+        margin-bottom: 10%;
     }
     .uganda-partner-title{
         margin-left: 0;
@@ -845,8 +850,21 @@ body{
     .carousel-control-prev i, .carousel-control-next i {
         font-size: 30px;
     }
+    
 }
 
+@media screen and (max-width: 1100px){    
+    .service-icon-arrow{
+        font-size:46px;
+    }
+    .impact-number{
+        font-size: 45px;
+    }
+    .impact-text{
+        padding-top:10%;
+    }
+    
+}
 
 button#increasetext {
 	font-size: 26px;
