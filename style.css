@@ -743,6 +743,27 @@ body{
     margin-left:100%;
     font-size:24px
 }
+.partner-carousel-item-rapehurt{
+    height:max-content;
+    width:fit-content;
+    margin-left:35%
+}
+.partner-carousel-item-riseforafr{
+    height:max-content;
+    width:fit-content;
+    margin-left:42%
+}
+.partner-carousel-item-linkchild{
+    height:max-content;
+    width:fit-content;
+    margin-left:30%
+}
+.partner-carousel-item-statista{
+    height:max-content;
+    width:fit-content;
+    margin-left:20%
+}
+
 .card-body{
     font-family:  'Source Sans Pro', sans-serif;
     font-size: 20px;
@@ -771,7 +792,7 @@ body{
         bottom: 0;
         right:0;
         position: fixed;
-        z-index: 1;
+        z-index: 2;
         display: block;
     }
     .careers{
@@ -857,6 +878,21 @@ body{
     }
     .carousel-control-prev i, .carousel-control-next i {
         font-size: 30px;
+    }
+    
+    .partner-carousel-item-rapehurt{
+        margin-left:5%
+    }
+    .partner-carousel-item-riseforafr{
+        margin-left:25%
+    }
+    .partner-carousel-item-linkchild{
+        max-width:100%;
+        height: auto;
+        margin-left:0;
+    }
+    .partner-carousel-item-statista{
+        width:fit-content;
     }
     
 }
