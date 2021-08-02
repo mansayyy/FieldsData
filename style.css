@@ -172,8 +172,6 @@ body{
     
     align-items: center;
 }
-.nav-pills .pill-1 .active {
-}
 /* active (faded) */
 .nav-pills .pill-1 .nav-link {
     background-color: white;
@@ -585,8 +583,6 @@ body{
     font-size: large;
     font-weight: bold;   
     padding-top: 25%; 
-}
-.impact-card{
 }
 /*Impact End*/
 
