@@ -1,0 +1,116 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Fields Data</title>
+  <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background: url('images/background_grad_banner.png')">
+  <!--Navbar-->
+  <nav class="navbars ">
+    
+    <div >
+      <div >
+        <div class="row" style="margin: 0;">
+          <div class="col-md-2">
+            <a href="index.html" class="navbar-brand"><img src="images/logoFD_transparent_cropped.png"></a>
+          </div>
+
+          <div class="col-md-8">           </div>
+          <div class="dropup" style="margin-top:auto">
+              
+            <img style="width:100px" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="images/noun_Accessibility_1872.png"> 
+            <div class="dropdown-menu textcontrols">
+            
+              <button class="btn btn-primary submit-mob dropdown-item mb-2" role="button" id="resettext">
+                <span><i class="bi bi-textarea-t"></i>Normal font</span>
+              </button>
+              <button class="btn btn-primary submit-mob dropdown-item mb-2" role="button" id="increasetext">
+                <span><i class="bi bi-textarea-t"></i>Bigger font</span>
+              </button>
+              <button class="btn btn-primary submit-mob dropdown-item mb-2" onclick="sayItOutLoud()">
+                <span><i class="bi bi-megaphone"></i>Read it loud</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+      </div>
+      
+      
+    </div>
+</nav>
+
+<nav class="navbar-mobile">
+  <a href="index.html" class="navbar-brand"><img src="images/logoFD_transparent_cropped.png"></a>
+  
+</nav>
+
+
+<div class="container" style="margin-top:5%">
+    <a href="organization.html"><button class="btn submit-mob dark-mode-btn">Back to Teams</button></a>
+    <div class="row" style="margin-bottom: 10%;margin-top:5%">
+        <div class="col-md-6" style="margin-top:auto;margin-bottom:auto">
+            <img style="max-width:100%;" src="images/Andrea_Ruzo.jpeg" />
+        </div>
+        <div class="col-md-6">
+            <h1 id="person-name">Andrea Ruzo</h1>
+            <h1 id="person-title">Co-Founder</h1>
+            <div class="careers" style="color:white">Over the past +10 years Andrea has been working in Project Management and Business Development in Asia, Latin America, Europe and the EMEA region collaborating with public governments, private actors and impact investing funds. She holds a Masters in International Business at ESCI - UPF and has specialized in International Development and Humanitarian Aid at University of London. Selected as one of the 50 most promising emerging women leaders by Santander, Andrea has worked on supporting, designing and implementing projects in rural development, health, women empowerment and social entrepreneurship in organizations like Devex, LGT Impact Ventures and SCP/RAC UNEP MAP.<br>Andrea was born in the green region of Galicia, where she travels as often as she can to enjoy nature and family there. Being a travel addict, she has found some time to learn 6 languages, and is currently trying to learn Arabic. She can have long intellectual conversations with babies and kids, and she is almost always ready to grab a drink or shake a leg with the oldies.</div>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  
+  <script>
+    $('#increasetext').click(function() {
+      curSize = parseInt($('.title-headings').css('font-size')) + 6;
+      $('.title-headings').css('font-size', curSize);
+      $('.careers').css('font-size', 26);
+    });
+  
+    $('#resettext').click(function() {
+      $('.careers').css('font-size', 20);
+      if (curSize != 36)
+        $('.title-headings').css('font-size', 36);
+      
+    });
+  
+    $('#decreasetext').click(function() {
+      curSize = parseInt($('.title-headings').css('font-size')) - 6;
+      $('.title-headings').css('font-size', curSize);      
+      $('.careers').css('font-size', 14);
+    });
+  </script>
+
+  <script>
+    function sayItOutLoud() {
+      var body = document.body;
+      const message = body.textContent || body.innerText;
+      //const message = document.getElementById('sayourstory').textContent;
+      var speech = new SpeechSynthesisUtterance();
+      speech.lang = "en-US";
+      speech.text = message;
+      speech.volume = 1;
+      speech.rate = 1;
+      speech.pitch = 1;    
+      window.speechSynthesis.speak(speech);
+    }
+  </script>
+</body>
+</html>

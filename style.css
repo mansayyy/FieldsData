@@ -201,6 +201,12 @@ body{
     color: white;
 }
 
+.dark-mode-btn{
+    background-color: white;
+    border: white;
+    color: #488a97;
+}
+
 .btn-primary:hover{
     background-color: #dc8c86;
     color: white;
