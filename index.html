@@ -13,68 +13,74 @@
 <body id="content">
   <!--Navbar-->
   
-    <nav class="navbars ">
-          <div class="row" style="margin: 0;">
-            <div class="col-md-2">
-              <a href="index.html" class="navbar-brand" id="fdlogo"><img src="images/logoFD_transparent_cropped.png"></a>
-            </div>
+  <nav class="navbars">
+    <div >
+      <div class="row" style="margin: 0;">
+        <div class="col-md-2">
+          <a href="index.html" class="navbar-brand"><img src="images/logoFD_transparent_cropped.png"></a>
+        </div>
 
-            <div class="col-md-8">
-              <div class="row" id="sub-navigation">
-                <ul class="nav nav-tabs">
-                  <li class="nav-item tab-c">
-                      <a class="nav-link active" href="#partner-with-us"><div >Partner with Us</div></a>                
-                    </li>
-                    <li class="nav-item tab-c">
-                      <a class="nav-link" href="#get-listed"><div>Get listed</div></a>
-                    </li>
-                    <li class="nav-item tab-c">
-                      <a class="nav-link" href="#collect-data"><div>Collect Data</div></a>
-                    </li>
-                    <li class="nav-item tab-c">
-                      <a class="nav-link" href="#say-hello"><div>Say Hello</div></a>
-                    </li>
-                </ul>
-              </div>
-
-              <div class="row" id="indexnav">
-                <ul class="nav">
-                  <li class="nav-item">
-                      <a class="nav-link " href="work.html">WORK</a>                
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="organization.html"><div>ORGANISATION</div></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="impact.html"><div>IMPACT</div></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="contact.html"><div>CONTACT</div></a>
-                    </li>
-                </ul>
-              </div>
-              
-            </div>
-            <div class="dropup" style="margin-top:auto">
-              
-              <img style="width:100px" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="images/noun_Accessibility_1872.png"> 
-              <div class="dropdown-menu textcontrols">
-              
-                <button class="btn btn-primary submit-mob dropdown-item mb-2" role="button" id="resettext">
-                  <span><i class="bi bi-textarea-t"></i>Normal font</span>
-                </button>
-                <button class="btn btn-primary submit-mob dropdown-item mb-2" role="button" id="increasetext">
-                  <span><i class="bi bi-textarea-t"></i>Bigger font</span>
-                </button>
-                <button class="btn btn-primary submit-mob dropdown-item mb-2" onclick="sayItOutLoud()">
-                  <span><i class="bi bi-megaphone"></i>Read it loud</span>
-                </button>
-              </div>
-            </div>
+        <div class="col-md-8">
+          
+          <div class="row" id="sub-navigation">
+            <ul class="nav nav-tabs ">
+              <li class="nav-item tab-c">
+                  <a class="nav-link active" href="#methodology">Methodology</a>                
+                </li>
+                <li class="nav-item tab-c">
+                  <a class="nav-link" href="#data"><div>Data</div></a>
+                </li>
+                <li class="nav-item tab-c">
+                  <a class="nav-link" href="#services"><div>Services</div></a>
+                </li>
+                <li class="nav-item tab-c">
+                  <a class="nav-link" href="#partners"><div>Partners</div></a>
+                </li>
+                <li class="nav-item tab-c">
+                  <a class="nav-link" href="#resources"><div>Resources</div></a>
+                </li>
+            </ul>
+          </div>
+          <div class="row" id="lowerrow">
+            <ul class="nav">
+              <li class="nav-item "id="sub-nav-driver" >
+                  <a class="nav-link"  href="work.html">WORK</a>                
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="organization.html"><div>ORGANISATION</div></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="impact.html"><div>IMPACT</div></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html"><div>CONTACT</div></a>
+                </li>
+            </ul>
           </div>
           
+        </div>
+        <div class="dropup" style="margin-top:auto">
           
-    </nav>
+          <img style="width:100px" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="images/noun_Accessibility_1872.png"> 
+          <div class="dropdown-menu textcontrols">
+          
+            <button class="btn btn-primary submit-mob dropdown-item mb-2" role="button" id="resettext">
+              <span><i class="bi bi-textarea-t"></i>Normal font</span>
+            </button>
+            <button class="btn btn-primary submit-mob dropdown-item mb-2" role="button" id="increasetext">
+              <span><i class="bi bi-textarea-t"></i>Bigger font</span>
+            </button>
+            <button class="btn btn-primary submit-mob dropdown-item mb-2" onclick="sayItOutLoud()">
+              <span><i class="bi bi-megaphone"></i>Read it loud</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+    </div>
+</nav>
     <nav class="navbar-mobile">
       <a href="index.html" class="navbar-brand"><img src="images/logoFD_transparent_cropped.png"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -130,7 +136,7 @@
 
     <!--Partners start-->
       <h2 class="title-headings" >Partners</h2><hr class="line-break">
-      <div class="carousel slide carousel-fade" id="carouselExampleFade" data-ride="carousel">
+      <div class="carousel slide carousel-fade" style="margin-bottom:10%" id="carouselExampleFade" data-ride="carousel">
         <div class="carousel-inner" style="height: max-content;">
           <div class="carousel-item active" style="height:max-content;width:fit-content;margin-left:35%">
             <img  src="images/Rape Hurts Foundation - Uganda.png" class="d-block" alt="...">
@@ -138,8 +144,11 @@
           <div class="carousel-item" style="height:max-content;width:fit-content;margin-left:42%">
             <img style="height:max-content;width:fit-content" src="images/riseforafrice.png" class="d-block" alt="...">
           </div>
-          <div class="carousel-item" style="height:max-content;width:fit-content;margin-left:40%">
-            <img style="width:fit-content;height:fit-content" src="images/linkchild.png" class="d-block" alt="...">
+          <div class="carousel-item" style="height:max-content;width:fit-content;margin-left:30%">
+            <img style="width:fit-content;height:fit-content" src="images/LinkchildFoundation_original_full_pt.png" class="d-block" alt="...">
+          </div>
+          <div class="carousel-item" style="height:max-content;width:fit-content;margin-left:35%">
+            <img style="width:fit-content;height:fit-content" src="images/statista_logo.png" class="d-block" alt="...">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -150,18 +159,6 @@
           <i class="bi bi-arrow-right" style="color: #488a97;" aria-hidden="true"></i>
           <span class="sr-only">Next</span>
         </a>
-      </div>
-
-      <h3 class="title-headings mb-4">Publishing Platforms</h3>
-      <div class="container" style="margin-bottom:10%;text-align:center">
-        <div class="row">
-          <div class="col-md-6">
-            <img src="images/hdx_logo.png">
-          </div>
-          <div class="col-md-6 mt-4">
-            <img class="statista-logo" src="images/statista_logo.png">
-          </div>
-        </div>
       </div>
 
       
@@ -186,9 +183,8 @@
   });
 
   document.getElementById('sub-navigation').style.visibility="hidden";
-  document.getElementById('fdlogo').style.marginBottom="6%";
-  document.getElementById('indexnav').style.marginBottom="1%";
-  document.getElementById('indexnav').style.marginLeft="2%";
+  document.getElementById('lowerrow').style.marginBottom="1%";
+  document.getElementById('fdlogo').style.marginBottom="0";
   </script>
   <script>
     var video = document.getElementById("video_background");

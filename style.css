@@ -32,7 +32,12 @@ body{
     display: none;
     visibility: hidden;
 }
-
+.nav-item{
+    width:140px;
+}
+#sub-navigation .nav-item{
+    width:100px;
+}
 .navbar-brand img{
     margin-top: 15%;
     width: 150px;
