@@ -672,11 +672,12 @@ body{
   .items:nth-child(4n){ grid-column-start: 7;}
   #person-name{
       font-size: 35px;
+      font-weight: 600;
       color: #dc8c86;
       text-align: center;
   }
   #person-title{
-    font-size: 30px;
+    font-size: 26px;
     color: #dc8c86;
     text-align: center;
   }
