@@ -101,6 +101,7 @@ body{
 	color: white;
 }
 .carousel-indicators {
+    z-index: 0;
 	bottom: -40px;
 }
 .carousel-indicators li, .carousel-indicators li.active {
@@ -756,7 +757,13 @@ body{
 .partner-carousel-item-linkchild{
     height:max-content;
     width:fit-content;
-    margin-left:30%
+    margin-left:30%;
+}
+#linkchildpartners{
+    content: url('images/LinkchildFoundation_original_full_pt.png');
+}
+#statistapartners{
+    content: url('images/statista_logo_pt.png');
 }
 .partner-carousel-item-statista{
     height:max-content;
@@ -889,12 +896,17 @@ body{
     .partner-carousel-item-linkchild{
         max-width:100%;
         height: auto;
-        margin-left:0;
+        margin-left:24%;
     }
     .partner-carousel-item-statista{
         width:fit-content;
     }
-    
+    #linkchildpartners{
+        content: url('images/LinkchildFoundation_original_short.png');
+    }
+    #statistapartners{
+        content: url('images/statista_logo_mobpt.png');
+    }
 }
 
 @media screen and (max-width: 1100px){    
