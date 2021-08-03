@@ -270,14 +270,17 @@
     <h2 class="title-headings">Media</h2><hr class="line-break">
     <div class="container" style="margin-bottom: 10%;">
       <p class="careers">Leave your email address and we shall send you our media kit <br> </p>
-
+      <form id="test-form">
       <div class="row">
         <div class="col-md-5">
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="abc@gmail.com">
+          <input type="text" name="media_email" class="form-control" id="exampleFormControlInput1" placeholder="abc@gmail.com">
         </div>
         <div class="col-md-1"></div>
-        <div class="col-md-2"><button class="btn btn-primary submit-mob">Submit</button></div>
+        <div class="col-md-2"><button class="btn btn-primary submit-mob" type="submit" id="submit-form">Submit</button></div>
+        <h3 class="careers mt-5" id="trialpostsubmit">Your question is submitted. We will try to answer it soon.</h3>
+          
       </div>
+    </form>
        
       <p class="careers">
         <br>Here are few instances when we were in the media: 
@@ -482,6 +485,23 @@
         speech.pitch = 1;    
         window.speechSynthesis.speak(speech);
       }
+    </script>
+    <script>
+      var $form = $('form#test-form'),
+      url = 'https://script.google.com/macros/s/AKfycbwMTRJsdRRCl_NXw0N_PLLgc2jSIC6GDzK3CiitEVpM3f8uWrHmaAk6tOuPC5Fj7Xmgpg/exec'
+      $('#trialpostsubmit').css({'visibility':'hidden'})
+      $('#submit-form').on('click', function(e) {
+        e.preventDefault();
+        var jqxhr = $.ajax({
+          url: url,
+          method: "GET",
+          dataType: "json",
+          data: $form.serialize()
+        }).success(
+          // do something
+          $('#trialpostsubmit').css({'visibility':'visible'})
+        );
+      })
     </script>
   </body>
 </html>
