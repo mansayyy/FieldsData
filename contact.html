@@ -277,7 +277,7 @@
 <h2 class="title-headings" style="margin-top: 5%;" > Say Hello! </h2><hr class="line-break">
 <div class="container"  style="margin-bottom:5%">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-6 col-sm-12">
       <p class="careers">If you would like to grab a virtual/physical coffee with any of us and talk about :<br>
         a) the problems faced by local organisations and ideas to tackle them<br>
         b) how we can help you<br>
@@ -287,11 +287,11 @@
     
     
         <div class="contact-form">
-          <form action="https://formspree.io/f/mvodbeel" method="POST">
+          <form id="test-form">
             <div class="form-group row">
               <label for="name" class="col-sm-2 col-form-label">Name</label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="exampleFormControlInput1" name="Name" placeholder="Name">
+                <input type="text" class="form-control" id="exampleFormControlInput1" name="person_name" placeholder="Name">
               </div>
             </div>
             <!--
@@ -304,20 +304,21 @@
             <div class="form-group row">
               <label for="exampleFormControlInput1" class="col-sm-2 col-form-label">Email</label>
               <div class="col-sm-10">
-                <input type="email" class="form-control" id="exampleFormControlInput1" name="Email" placeholder="name@example.com">
+                <input type="email" class="form-control" id="exampleFormControlInput1" name="person_mail" placeholder="name@example.com">
               </div>
             </div>
             <div class="form-group row">
               <label for="inputPassword" class="col-sm-2 col-form-label">Message</label>
               <div class="col-sm-10">
-                <textarea type="password" class="form-control" id="inputPassword" name="Message" placeholder="Hi there"></textarea>
+                <textarea type="password" class="form-control" id="inputPassword" name="person_msg" placeholder="Hi there"></textarea>
               </div>
             </div>
-            <button type="submit" class="btn btn-primary bottom">Submit</button>
+            <button type="submit" id="submit-form" class="btn btn-primary bottom">Submit</button>
+            <h3 class="careers mt-5" id="trialpostsubmit">Your question is submitted. We will try to answer it soon.</h3>
           </form>
         </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 col-sm-12">
       <img style="max-width:100%" src="images/sayhello.png">
     </div>
   </div>
