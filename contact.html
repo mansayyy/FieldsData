@@ -129,36 +129,38 @@
 
   </p>
   <div class="contact-form">
-    <form>
+    <form id="get-listed-form">
       <div class="form-group row">
         <label for="name" class="col-sm-3 col-form-label">Organisation Name</label>
         <div class="col-sm-9">
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Fields Data ">
+          <input type="text" class="form-control" id="exampleFormControlInput1" name="org_name" placeholder="Fields Data ">
         </div>
       </div>
       <div class="form-group row">
         <label for="exampleFormControlInput1" class="col-sm-3 col-form-label">Country</label>
         <div class="col-sm-9">
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Add all the countries you are currently registered in">
+          <input type="text" class="form-control" id="exampleFormControlInput1" name="org_country" placeholder="Add all the countries you are currently registered in">
         </div>
       </div>
       <div class="form-group row">
         <label for="exampleFormControlInput1" class="col-sm-3 col-form-label">Province/State</label>
         <div class="col-sm-9">
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Add all the provinces you are currently active in">
+          <input type="text" class="form-control" id="exampleFormControlInput1" name="org_state" placeholder="Add all the provinces you are currently active in">
         </div>
       </div>
       <div class="form-group row">
         <label for="inputPassword" class="col-sm-3 col-form-label">City/District</label>
         <div class="col-sm-9">
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Add all the districts you are currently working in">
+          <input type="text" class="form-control" id="exampleFormControlInput1" name="org_city" placeholder="Add all the districts you are currently working in">
         </div>
       </div>
       <div class="form-group row">
         <label for="name" class="col-sm-3 col-form-label">Sectors you work in</label>
+        
         <div class="col-sm-9 careers" style="font-size: 16px;">
-    <select id="multiple-checkboxes" style="width:600px; color:#488a97;" multiple="multiple">
-        <option value="education">Education</option>
+          <!--
+    <select id="multiple-checkboxes" name="org_sector" style="width:600px; color:#488a97;" multiple="multiple">
+        <option value="education" >Education</option>
         <option value="healnutri">Health and nutrition</option>
         <option value="wash">Wash</option>
         <option value="protection">Protection</option>
@@ -172,43 +174,174 @@
         <option value="foodsec">Food security</option>
         <option value="emergres">Emergency Response</option>
         <option value="other">Other</option>
-    </select>
+    </select>-->
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="education" name="org_sec_edu" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Education
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Health" name="org_sec_health" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Health and nutrition
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="wash" name="org_sec_wash" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Wash
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="protection" name="org_sec_protec" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Protection
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="transport" name="org_sec_transport" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Transport
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="energy" name="org_sec_energy" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Energy
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="communication" name="org_sec_comm" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Communication
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="pvtsector" name="org_sec_pvtsec" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Private Sector 
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Mining" name="org_sec_mining" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Mining
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Livelihood" name="org_sec_livelihood" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Livelihood
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Migrations" name="org_sec_migrations" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Migrations
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Food Security" name="org_sec_foodsec" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Food Security
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Emergency Response" name="org_sec_emergency_resp" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Emergency Response
+                </label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="Other" name="org_sec_other" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Other
+                </label>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
       <div class="form-group row">
         <label for="exampleFormControlInput1" class="col-sm-3 col-form-label">Organisational contact details</label>
         <div class="col-sm-9">
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Email, phone number with country code">
+          <input type="text" class="form-control" name="org_contact" id="exampleFormControlInput1" placeholder="Email, phone number with country code">
         </div>
       </div>
       <div class="form-group row">
         <label for="exampleFormControlInput1" class="col-sm-3 col-form-label">Website</label>
         <div class="col-sm-9">
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="www.fieldsdata.org">
+          <input type="text" class="form-control" name="org_wbsite" id="exampleFormControlInput1" placeholder="www.fieldsdata.org">
         </div>
       </div>
       <div class="form-group row">
         <label for="exampleFormControlInput1" class="col-sm-3 col-form-label">Short Description about the organisation</label>
         <div class="col-sm-9">
-          <textarea type="text" class="form-control" id="exampleFormControlInput1" placeholder="Work currently engaged in, mission of the organisation etc."></textarea>
+          <textarea type="text" class="form-control" name="org_desc" id="exampleFormControlInput1" placeholder="Work currently engaged in, mission of the organisation etc."></textarea>
         </div>
       </div>
       <div class="form-group row">
         <label for="exampleFormControlInput1" class="col-sm-3 col-form-label">Would you be ok with us sharing your details on other platforms such as HDX, IATI?</label>
         <div class="col-sm-9">
+          <!--
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <input class="form-check-input" type="radio" name="org_yes" id="inlineRadio1" value="option1">
             <label class="form-check-label" for="inlineRadio1">Yes</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <input class="form-check-input" type="radio" name="org_no" id="inlineRadio2" value="option2">
             <label class="form-check-label" for="inlineRadio2">No</label>
-          </div>
+          </div>-->
+          <select id="multiple-checkboxes" class="form-control" name="org_yes" style="color:#488a97">
+            <option value="Yes" >Yes</option>
+            <option value="No">No</option>
+        </select>
         </div>
       </div>
 
 
-      <button type="button" class="btn btn-primary ">Submit</button>
+      <button type="button" class="btn btn-primary" id="submit-gl-form">Submit</button>
+      <h3 class="careers mt-5" id="trialpostsubmit-gl">Your question is submitted. We will try to answer it soon.</h3>
+         
     </form>
   </div>
 
@@ -418,6 +551,41 @@
         includeSelectAllOption: true,
       });
   });
+  </script>
+  <script>
+    var $form = $('form#test-form'),
+    url = 'https://script.google.com/macros/s/AKfycbxj49Vy2MnL1H8PbMR-A-uMUi_f3BM-bgOv2n6NXE8i2dy-fy7P9Pm1uDg3UdgDJOM-IA/exec'
+    $('#trialpostsubmit').css({'visibility':'hidden'})
+    $('#submit-form').on('click', function(e) {
+      e.preventDefault();
+      var jqxhr = $.ajax({
+        url: url,
+        method: "GET",
+        dataType: "json",
+        data: $form.serialize()
+      }).success(
+        // do something
+        $('#trialpostsubmit').css({'visibility':'visible'})
+      );
+    })
+  </script>
+
+  <script>
+    var $form = $('form#get-listed-form'),
+    url = 'https://script.google.com/macros/s/AKfycbw363XYtdunITtJ4rnEat5-4zkTkEPJGHCLKULycik3NnJSWsqfL5AqLvPUnoTl3ffR3Q/exec'
+    $('#trialpostsubmit-gl').css({'visibility':'hidden'})
+    $('#submit-gl-form').on('click', function(e) {
+      e.preventDefault();
+      var jqxhr = $.ajax({
+        url: url,
+        method: "GET",
+        dataType: "json",
+        data: $form.serialize()
+      }).success(
+        // do something
+        $('#trialpostsubmit-gl').css({'visibility':'visible'})
+      );
+    })
   </script>
 </body>
 </html>
