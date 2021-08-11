@@ -141,6 +141,24 @@
   <div>
 
     <div class="container">
+      <img src="images/MicrosoftTeams-image (1).png" alt="Workplace" usemap="#workmap" style="max-width: 100%;">
+      
+    <map name="workmap">
+      <area target="_self" alt="Anand" href="anand-ramachandran.html" coords="240,256,26,6" shape="rect">
+      <area target="_self" alt="Andrea" href="andrea-ruzo.html" coords="267,7,450,249" shape="rect">
+      <area target="_self" alt="Arnau" href="arnau-rovira.html" coords="480,7,640,241" shape="rect">
+      <area target="_self" alt="Athira" href="athira-lonappan.html" coords="650,7,850,249" shape="rect">
+      <area target="_self" alt="Jose" href="jose.html" coords="865,9,1239,249" shape="rect">
+      <area target="_self" alt="Manasi" href="manasi-anantpurkar.html" coords="240,533,26,286" shape="rect">
+      <area target="_self" alt="Marc" href="marc-sanford.html" coords="267,286,450,532" shape="rect">
+      <area target="_self" alt="Pablo" href="pablo.html" coords="480,287,640,528" shape="rect">
+      <area target="_self" alt="Rushikesh" href="rushikesh.html" coords="650,290,850,527" shape="rect">
+      <area target="_self" alt="Velton" href="velton-dsouza.html" coords="865,292,1239,528" shape="rect">
+    </map>
+
+    </div>
+<!--
+    <div class="container">
       <div class="row">
         <div class="col-md-3">
           <div class="team-card" onclick="location.href='anand-ramachandran.html'">
@@ -213,7 +231,7 @@
 
       
 
-    </div>
+    </div>-->
       <!--<div class="container-team">
         <div class="item"><div class="hexagon hexagon-1" id="hexagon-1" ><div class="hexagon-title">Anand </div></div></div>
         <div class="item"><div class="hexagon hexagon-2" onclick="hex_two()"><div class="hexagon-title">Arnau </div></div></div>
@@ -225,7 +243,7 @@
         <div class="item"><div class="hexagon hexagon-8" onclick="hex_eight()"><div class="hexagon-title">Velton </div></div></div>
         <div class="item"><div class="hexagon hexagon-9" onclick="hex_nine()"><div class="hexagon-title">Rushikesh </div></div></div>
         <div class="item"><div class="hexagon hexagon-10" onclick="hex_ten()"><div class="hexagon-title">Manasi </div></div></div>
-      </div>-->
+      </div>
       <div id="biobox">
         <div class="careers" >
           <h1 id="person-name"></h1>
@@ -233,7 +251,7 @@
           <div id="about-the-person"></div>
         </div>
       </div>
-  </div>
+  </div>-->
 
   <h2 class="title-headings" id="our-team">Board</h2><hr class="line-break">
   
@@ -242,7 +260,7 @@
         <div class="row">
           <div class="col-md-3">
             <div class="team-card" onclick="hex_eleven()">
-              <img style="width:80%;margin-left:10%" src="images/board_member1.JPG">
+              <img style="width:80%;margin-left:10%" src="images/board_member1.png">
               <div class="team-card-footer">Halimatou</div>
             </div>
           </div>
@@ -254,13 +272,13 @@
           </div>
           <div class="col-md-3">
             <div class="team-card" onclick="hex_thirteen()">
-              <img style="width:80%;margin-left:10%" src="images/board_member3.JPG">
+              <img style="width:80%;margin-left:10%" src="images/board_member3.png">
               <div class="team-card-footer">Lee</div>
             </div>
           </div>
           <div class="col-md-3">
             <div class="team-card" onclick="hex_fourteen()">
-              <img style="width:80%;margin-left:10%" src="images/isidore_bm.png">
+              <img style="width:80%;margin-left:10%" src="images/isidore_2.png">
               <div class="team-card-footer">Isidore</div>
             </div>
           </div>
@@ -591,6 +609,12 @@
         $('#trialpostsubmit').css({'visibility':'visible'})
       );
     })
+  </script>
+  <script src="jquery.rwdImageMaps.min.js"></script>
+  <script>
+    $(document).ready(function(e) {
+      $('img[workmap]').rwdImageMaps();
+  });
   </script>
 </body>
 </html>
